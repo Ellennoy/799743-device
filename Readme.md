@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Bokhan Anna](https://up.htmlacademy.ru/htmlcss/21/user/799743).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Выхрыстюк](https://htmlacademy.ru/profile/id568747).
 
 ---
 
