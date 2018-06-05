@@ -11,6 +11,7 @@
   </div>
   <div class="user-interface">
     <span class="user-form"></span>
+    <input type="search" placeholder="Поиск по сайту"/>
     <ul class="user-buttons">
       <li><a class="user-button" href="#">Войти</a></li>
       <li><a class="user-button" href="#">Сравнить</a></li>
@@ -102,25 +103,36 @@
     </div>
   </section>
   <section class="product-section">
-    <table class="product-section-table">
-      <tr class="product-section-tr">
-
-        <td class="product-section-td"><img class="product-section-image" src="#" width="50" height="50"></td>
-        <td class="product-section-td"><img class="product-section-image" src="#" width="50" height="50"></td>
-        <td class="product-section-td"><img class="product-section-image" src="#" width="50" height="50"></td>
-        <td class="product-section-td"><img class="product-section-image" src="#" width="50" height="50"></td>
-        <td class="product-section-td"><img class="product-section-image" src="#" width="50" height="50"></td>
-        <td class="product-section-td"><img class="product-section-image" src="#" width="50" height="50"></td>
-      </tr>
-      <tr>
-        <th class="product-section-th">Виртуальная реальность</th>
-        <th class="product-section-th">Моноподы для селфи</th>
-        <th class="product-section-th">Экшн-камеры</th>
-        <th class="product-section-th">Фитнес-браслеты</th>
-        <th class="product-section-th">Умные часы</th>
-        <th class="product-section-th">Квадрокоптеры</th>
-      </tr>
-    </table>
+    <div class="product-section-virtrealitys">
+      <p><a href="#"><img class="product-section-img" src="#" width="100" height="100"
+                          alt="Виртуальная реальность"></a></p>
+      <h2><a href="#"></a>Виртуальная реальность</h2>
+    </div>
+    <div class="product-section-monopods">
+      <p><a href="#"><img class="product-section-img" src="#" width="100" height="100"
+                          alt="Моноподы для селфи"></a></p>
+      <h2><a href="#"></a>Моноподы для селфи</h2>
+    </div>
+    <div class="product-section-actioncamers">
+      <p><a href="#"><img class="product-section-img" src="#" width="100" height="100"
+                          alt="Экшн камеры"></a></p>
+      <h2><a href="#"></a>Экшн камеры</h2>
+    </div>
+    <div class="product-section-fitnessbr">
+      <p><a href="#"><img class="product-section-img" src="#" width="100" height="100"
+                          alt="Фитнес браслеты"></a></p>
+      <h2><a href="#"></a>Фитнес браслеты</h2>
+    </div>
+    <div class="product-section-cleverclock">
+      <p><a href="#"><img class="product-section-img" src="#" width="100" height="100"
+                          alt="Умные часы"></a></p>
+      <h2><a href="#"></a>Умные часы</h2>
+    </div>
+    <div class="product-section-cvadrakopters">
+      <p><a href="#"><img class="product-section-img" src="#" width="100" height="100"
+                          alt="Квадрокоптеры"></a></p>
+      <h2><a href="#"></a>Квадрокоптеры</h2>
+    </div>
   </section>
   <section class="slide-services">
     <div class="slide-delivery">
@@ -175,21 +187,22 @@
     </div>
   </section>
   <section class="logotypes-section">
-    <table class="logotypes-section-table">
-      <tr class="logotypes-section-tr">
-
-        <td class="logotypes-section-td"><img class="logotypes-section-image" src="#" width="80" height="80"></td>
-        <td class="logotypes-section-td"><img class="logotypes-section-image" src="#" width="80" height="80"></td>
-        <td class="logotypes-section-td"><img class="logotypes-section-image" src="#" width="80" height="80"></td>
-        <td class="logotypes-section-td"><img class="logotypes-section-image" src="#" width="80" height="80"></td>
-      </tr>
-      <tr>
-        <th class="visually-hidden">logo-1</th>
-        <th class="visually-hidden">logo-2</th>
-        <th class="visually-hidden">logo-3</th>
-        <th class="visually-hidden">logo-4</th>
-      </tr>
-    </table>
+    <div class="logotypes-section-djis">
+      <p><a href="#"><img class="logotypes-section-dji" src="#" width="300" height="200"
+                          alt="dji"></a></p>
+    </div>
+    <div class="logotypes-section-spgadgets">
+      <p><a href="#"><img class="logotypes-section-spgadget" src="#" width="300" height="200"
+                          alt="spgadget"></a></p>
+    </div>
+    <div class="logotypes-section-gopros">
+      <p><a href="#"><img class="logotypes-section-gopro" src="#" width="300" height="200"
+                          alt="GoPro-Be a Hero"></a></p>
+    </div>
+    <div class="logotypes-section-vives">
+      <p><a href="#"><img class="logotypes-section-vive" src="#" width="300" height="200"
+                          alt="Vive"></a></p>
+    </div>
   </section>
   <section class="about-us">
     <div class="delivery-company">
@@ -221,7 +234,9 @@
     <div class="logo">
       <a class="logo-text" href="index.html">Device </a>
     </div>
-    <p class="footer-adress">г.Москва, улица Строителей, 15</p>
+    <p class="footer-adress">
+    <address>г.Москва, улица Строителей, 15</address>
+    </p>
   </div>
   <nav class="nav-footer">
     <ul class="nav-footer-items">
@@ -242,7 +257,7 @@
       <li><a class="user-button-footer" href="#">Сравнить</a></li>
       <li><a class="user-button-footer" href="#">Корзина</a></li>
     </ul>
-    <p class="footer-number"> + 7(495)495-95-95</p>
+    <p class="footer-number"><a href="tel:+7(495)495-95-95">+7(495)495-95-95</a></p>
   </div>
 </footer>
 </body>
