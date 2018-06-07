@@ -14,9 +14,9 @@
     <img src=" img/search.png">
     <input type="search" placeholder="Поиск по сайту"/>
     <ul class="user-buttons">
-      <li><a class="user-button" href="#">Войти</a></li>
-      <li><a class="user-button" href="#">Сравнить</a></li>
-      <li><a class="user-button" href="#">Корзина</a></li>
+      <li><a class="user-button" href="#"><img src="img/user.png">Войти</a></li>
+      <li><a class="user-button" href="#"><img src="img/compare.png">Сравнить</a></li>
+      <li><a class="user-button" href="#"><img src="img/cart.png">Корзина</a></li>
     </ul>
   </div>
   <nav class="nav">
@@ -47,8 +47,8 @@
   <section class="slides">
     <h2 class="visually-hidden">Слайде товаров</h2>
     <div class="slide1">
-      <div class="slide-image-block">
-        <img class="slide-image" src="http://placehold.it/500x300" width="500" height="300"
+      <div class="slide-image-block-monopode">
+        <img class="slide-image" src="img/slider-1.png" width="384" height="486"
              alt="Моноподы селфи палки">
       </div>
       <div class="slide-description-block">
@@ -61,10 +61,15 @@
         <!--**********************************************-->
         <!--текст изменить на оригинальный то что в макете -->
         <!--**********************************************-->
-        <p class="slide-description-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Consequatur,
-          distinctio ea earum eum ex </p>
+        <p class="slide-description-paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
+          Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм. </p>
         <a class="slide-description-more" href="#">Подробнее</a>
+        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+        <div class="slider-button-monopode">
+          <img src="img/slider-button.png">img
+          <img src="img/slider-button-empty.png">img
+          <img src="img/slider-button-empty.png">img
+        </div>
         <table class="slide-description-table">
           <tr class="slide-description-tr">
             <td class="slide-description-td">8,5м</td>
@@ -80,12 +85,22 @@
       </div>
     </div>
     <div class="slide2">
+      <div class="slide-image-block-control">
+        <img class="slide-image" src="img/slider-2.png" width="345" height="485"
+             alt="Браслет для контроля веса">
+      </div>
       <div class="slide-description-block">
         <h2 class="visually-hidden">браслет для контроля веса</h2>
         <p class="slide-description-paragraph">Худеем правильно!</p>
         <p class="slide-description-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
           не пропускать занятия и соблюдать диету.</p>
         <a class="slide-description-more" href="#">Подробнее</a>
+        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+        <div class="slider-button-monopode">
+          <img src="img/slider-button-empty.png">img
+          <img src="img/slider-button.png">img
+          <img src="img/slider-button-empty.png">img
+        </div>
         <table class="slide-description-table">
           <tr class="slide-description-tr">
             <td class="slide-description-td">48ч</td>
@@ -97,14 +112,24 @@
       </div>
     </div>
     <div class="slide3">
+      <div class="slide-image-block-control">
+        <img class="slide-image" src="img/slider-3.png" width="526" height="334"
+             alt="Квадрокоптер">
+      </div>
       <div class="slide-description-block">
-        <h2 class="visually-hidden">палки для селфи</h2>
+        <h2 class="visually-hidden">Квадрокоптеры</h2>
         <p class="slide-description-paragraph">Порхает как бабочка,<br>
           жалит как пчела!</p>
         <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
           лазером,<br>
           замаскированным под стандартную камеру.</p>
         <a class="slide-description-more" href="#">Подробнее</a>
+        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+        <div class="slider-button-monopode">
+          <img src="img/slider-button-empty.png">img
+          <img src="img/slider-button.png">img
+          <img src="img/slider-button-empty.png">img
+        </div>
         <table class="slide-description-table">
           <tr class="slide-description-tr">
             <td class="slide-description-td">800м</td>
@@ -186,7 +211,7 @@
     </div>
     <div class="slide-warranty">
       <div class="slide-warranty-image-begin">
-        <img class="warranty-image-begin" src="#" width="300" height="400" alt="Условия Гарантия">
+        <img class="warranty-image-begin" src="img/warranty.png" width="300" height="400" alt="Условия Гарантия">
       </div>
       <div class="slide-warranty-block">
         <h3>Гарантия</h3>
@@ -278,23 +303,22 @@
       <li class="nav-footer-item"><a class="nav-link" href="#">Контакты</a></li>
     </ul>
   </nav>
-    <ul class="nav-footer-websites">
-      <li class="nav-footer-website"><a class="nav-link" href="facebook.com">
-        <img src="#"></a></li>
-      <li class="nav-footer-website"><a class="nav-link" href="instagram.com">
-        <!-- (｡◕‿◕｡) -->
-        <img src="img/insta.png"></a></li>
-      <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/cart.png"></a></li>
-    </ul>
+  <ul class="nav-footer-websites">
+    <li class="nav-footer-website"><a class="nav-link" href="facebook.com"><img src="img/ФБ.png">
+      <img src="#"></a></li>
+    <li class="nav-footer-website"><a class="nav-link" href="instagram.com"><img src="img/insta.png"></a></li>
+      <!-- (｡◕‿◕｡) -->
+    <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/Твитер.png"></a></li>
+  </ul>
   <div class="user-interface-footer">
     <span class="user-form-footer"></span>
     <ul class="user-buttons-footer">
-      <li><a class="user-button-footer" href="#"><img src="img/cart.png">Войти</a></li>
+      <li><a class="user-button-footer" href="#"><img src="img/user.png">Войти</a></li>
       <li><a class="user-button-footer" href="#"><img src="img/compare.png">Сравнить</a></li>
       <li><a class="user-button-footer" href="#"><img src="img/cart.png">Корзина</a></li>
     </ul>
     <a href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
-      <img src="img/logo-html.png" alt="HTML-academy">
+    <img src="img/logo-html.png" alt="HTML-academy">
   </div>
 </footer>
 </body>
