@@ -54,55 +54,54 @@
     <form class="filters">
       <h2>Фильтр</h2>>
       <div class="filter-cost">
-        <fieldset class="cost">
-          <h3>Стоимость</h3>
-        </fieldset>
+        <h3>Стоимость</h3>
+        <div class="cost"></div>
       </div>
       <div class="filter-color">
-        <fieldset class="color">
-          <h3>Цвет</h3>
-          <ul>
-            <li class="color-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="black" checked>
-              <label for="black">Черный</label>
-            </li>
-            <li class="color-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="white" name="Белый">
-              <!--Не checked тк не выбрано окошко-->
-              <label for="white">Белый1</label>
-            </li>
-            <li class="color-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="blue" name="Синий"
-                     checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li class="color-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="red" name="Красный"
-                     checked>
-              <label for="red">Красный</label>
-            </li>
-            <li class="color-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="pink"
-                     name="Розовый">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
+        <h3>Цвет</h3>
+        <ul>
+          <li class="color-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-color-black"
+                   name="black" checked>
+            <label for="filter-color-black">Черный</label>
+          </li>
+          <li class="color-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-color-white"
+                   name="filter-color-white">
+            <!--Не checked тк не выбрано окошко-->
+            <label for="filter-color-white">Белый1</label>
+          </li>
+          <li class="color-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-color-blue"
+                   name="filter-color-blue"
+                   checked>
+            <label for="filter-color-blue">Синий</label>
+          </li>
+          <li class="color-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-color-red"
+                   name="filter-color-red"
+                   checked>
+            <label for="filter-color-red">Красный</label>
+          </li>
+          <li class="color-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-color-pink"
+                   name="filter-color-pink">
+            <label for="filter-color-pink">Розовый</label>
+          </li>
+        </ul>
       </div>
       <div class="filter-bluetooth">
-        <fieldset class="bluetooth">
           <h3>Bluetooth</h3>
           <ul>
             <li class="bluetooth-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="yes" checked>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="yes" checked name="filter-bluetooth">
               <label for="yes">Есть</label>
             </li>
             <li class="bluetooth-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="no">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="no" name="filter-bluetooth">
               <label for="no">Нет</label>
             </li>
           </ul>
-        </fieldset>
       </div>
       <button type="submit" class="filter-button button">Показать</button>
     </form>
