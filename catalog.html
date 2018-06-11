@@ -50,9 +50,62 @@
     <a href="#">Моноподы для селфи</a>
   </div>
   <section class="content">
-    <div class="filters">
-      <span class="forms"></span>
-    </div>
+    <form class="filters">
+      <h2>Фильтр</h2>>
+      <div class="filter-cost">
+        <fieldset class="cost">
+          <h3>Стоимость</h3>
+          <script src="js/script.js"></script>
+        </fieldset>
+      </div>
+      <div class="filter-color">
+        <fieldset class="color">
+          <h3>Цвет</h3>
+          <ul>
+            <li class="color-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="black" checked>
+              <label for="black">Черный</label>
+            </li>
+            <li class="color-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="white" name="Белый">
+              <!--Не checked тк не выбрано окошко-->
+              <label for="white">Белый</label>
+            </li>
+            <li class="color-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="blue" name="Синий"
+                     checked>
+              <label for="blue">Синий</label>
+            </li>
+            <li class="color-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="red" name="Красный"
+                     checked>
+              <label for="red">Красный</label>
+            </li>
+            <li class="color-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="pink"
+                     name="Розовый">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="filter-bluetooth">
+        <fieldset class="bluetooth">
+          <h3>Bluetooth</h3>
+          <ul>
+            <li class="bluetooth-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="yes" checked>
+              <label for="yes">Есть</label>
+            </li>
+            <li class="bluetooth-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="no">
+              <label for="no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <button type="submit" class="filter-button button">Показать</button>
+    </form>
     <div class="main-content">
       <section class="sorting-title">
         <a href="#">По цене</a>
@@ -149,9 +202,6 @@
     <img src="img/logo-html.png" alt="HTML-academy">
   </div>
 </footer>
-<div class =modal>
-
-</div>>
 </body>
 </html>
 <!--**********************************************-->

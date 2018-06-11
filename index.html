@@ -46,102 +46,140 @@
   <h1 class="visually-hidden">Интернет магазин Device</h1>
   <section class="slides">
     <h2 class="visually-hidden">Слайде товаров</h2>
-    <div class="slide1">
-      <div class="slide-image-block-monopode">
-        <img class="slide-image" src="img/slider-1.png" width="384" height="486"
-             alt="Моноподы селфи палки">
-      </div>
-      <div class="slide-description-block">
-        <!--**********************************************-->
-        <!--изменить тип заголовка и в остальных слайдах также -->
-        <!--**********************************************-->
-        <h2 class="visually-hidden">палки для селфи</h2>
-        <p class="slide-description-paragraph">Делай селфи <br>
-          как Бен Стиллер!</p>
-        <!--**********************************************-->
-        <!--текст изменить на оригинальный то что в макете -->
-        <!--**********************************************-->
-        <p class="slide-description-paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
-          Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм. </p>
-        <a class="slide-description-more" href="#">Подробнее</a>
-        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-        <div class="slider-button-monopode">
-          <img src="img/slider-button.png">img
-          <img src="img/slider-button-empty.png">img
-          <img src="img/slider-button-empty.png">img
+    <!--Простой слайдер с анимированным переключением кадров-->
+    <!--Начнём создание слайдера с такого кода:-->
+    <div class='sliderA'>
+      <input type="radio" name="slider1" id="slider1_1" checked="checked">
+      <label for="slider1_1"></label>
+      <!--Контейнер слайдера — div с классом sliderA. Каждый кадр слайдера описывается трёмя тегами:-->
+
+      <!--Радиокнопкой (input type="radio"), отвечающей за состояние данного кадра (видно / не видно)-->
+      <!--Меткой label, отвечающей за отображение кнопки перехода на данный слайдер.-->
+      <!--Тегом div в котором находится содержимое кадра.-->
+      <div class="slide1">
+        <div class="slide-image-block-monopode">
+          <img class="slide-image" src="img/slider-1.png" width="384" height="486"
+               alt="Моноподы селфи палки">
         </div>
-        <table class="slide-description-table">
-          <tr class="slide-description-tr">
-            <td class="slide-description-td">8,5м</td>
-            <td class="slide-description-td">5кг</td>
-            <td class="slide-description-td">карбон</td>
-          </tr>
-          <tr>
-            <th class="slide-description-th">высота</th>
-            <th class="slide-description-th">вес</th>
-            <th class="slide-description-th">материал</th>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="slide2">
-      <div class="slide-image-block-control">
-        <img class="slide-image" src="img/slider-2.png" width="345" height="485"
-             alt="Браслет для контроля веса">
-      </div>
-      <div class="slide-description-block">
-        <h2 class="visually-hidden">браслет для контроля веса</h2>
-        <p class="slide-description-paragraph">Худеем правильно!</p>
-        <p class="slide-description-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-          не пропускать занятия и соблюдать диету.</p>
-        <a class="slide-description-more" href="#">Подробнее</a>
-        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-        <div class="slider-button-monopode">
-          <img src="img/slider-button-empty.png">img
-          <img src="img/slider-button.png">img
-          <img src="img/slider-button-empty.png">img
+        <div class="slide-description-block">
+          <!--**********************************************-->
+          <!--изменить тип заголовка и в остальных слайдах также -->
+          <!--**********************************************-->
+          <h2 class="visually-hidden">палки для селфи</h2>
+          <p class="slide-description-paragraph">Делай селфи <br>
+            как Бен Стиллер!</p>
+          <!--**********************************************-->
+          <!--текст изменить на оригинальный то что в макете -->
+          <!--**********************************************-->
+          <p class="slide-description-paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм. </p>
+          <a class="slide-description-more" href="#">Подробнее</a>
+          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+          <div class="slider-button-monopode">
+            <img src="img/slider-button.png">img
+            <img src="img/slider-button-empty.png">img
+            <img src="img/slider-button-empty.png">img
+          </div>
+          <table class="slide-description-table">
+            <tr class="slide-description-tr">
+              <td class="slide-description-td">8,5м</td>
+              <td class="slide-description-td">5кг</td>
+              <td class="slide-description-td">карбон</td>
+            </tr>
+            <tr>
+              <th class="slide-description-th">высота</th>
+              <th class="slide-description-th">вес</th>
+              <th class="slide-description-th">материал</th>
+            </tr>
+          </table>
         </div>
-        <table class="slide-description-table">
-          <tr class="slide-description-tr">
-            <td class="slide-description-td">48ч</td>
-          </tr>
-          <tr>
-            <th class="slide-description-th">Без подзарядки</th>
-          </tr>
-        </table>
       </div>
-    </div>
-    <div class="slide3">
-      <div class="slide-image-block-control">
-        <img class="slide-image" src="img/slider-3.png" width="526" height="334"
-             alt="Квадрокоптер">
-      </div>
-      <div class="slide-description-block">
-        <h2 class="visually-hidden">Квадрокоптеры</h2>
-        <p class="slide-description-paragraph">Порхает как бабочка,<br>
-          жалит как пчела!</p>
-        <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-          лазером,<br>
-          замаскированным под стандартную камеру.</p>
-        <a class="slide-description-more" href="#">Подробнее</a>
-        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-        <div class="slider-button-monopode">
-          <img src="img/slider-button-empty.png">img
-          <img src="img/slider-button.png">img
-          <img src="img/slider-button-empty.png">img
+      <!--Mетка идущая после первого кадра, активирует второй кадр. -->
+      <!--Метка, расположенная после второго кадра, активирует третий кадр; -->
+      <!--после третьего — чертвёртый. Последняя метка активирует первый кадр.-->
+      <label for="slider1_2"></label>
+
+      <input type="radio" name="slider1" id="slider1_2">
+      <label for="slider1_2"></label>
+      <!--Контейнер слайдера — div с классом sliderA. Каждый кадр слайдера описывается трёмя тегами:-->
+
+      <!--Радиокнопкой (input type="radio"), отвечающей за состояние данного кадра (видно / не видно)-->
+      <!--Меткой label, отвечающей за отображение кнопки перехода на данный слайдер.-->
+      <!--Тегом div в котором находится содержимое кадра.-->
+      <div class="slide2">
+        <div class="slide-image-block-control">
+          <img class="slide-image" src="img/slider-2.png" width="345" height="485"
+               alt="Браслет для контроля веса">
         </div>
-        <table class="slide-description-table">
-          <tr class="slide-description-tr">
-            <td class="slide-description-td">800м</td>
-            <td class="slide-description-td">50м</td>
-          </tr>
-          <tr>
-            <th class="slide-description-th">Дальность полета</th>
-            <th class="slide-description-th">Радиус поражения</th>
-          </tr>
-        </table>
+        <div class="slide-description-block">
+          <h2 class="visually-hidden">браслет для контроля веса</h2>
+          <p class="slide-description-paragraph">Худеем правильно!</p>
+          <p class="slide-description-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+            не пропускать занятия и соблюдать диету.</p>
+          <a class="slide-description-more" href="#">Подробнее</a>
+          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+          <div class="slider-button-monopode">
+            <img src="img/slider-button-empty.png">img
+            <img src="img/slider-button.png">img
+            <img src="img/slider-button-empty.png">img
+          </div>
+          <table class="slide-description-table">
+            <tr class="slide-description-tr">
+              <td class="slide-description-td">48ч</td>
+            </tr>
+            <tr>
+              <th class="slide-description-th">Без подзарядки</th>
+            </tr>
+          </table>
+        </div>
       </div>
+      <label for="slider1_3"></label>
+
+      <input type="radio" name="slider1" id="slider1_3">
+      <label for="slider1_3"></label>
+      <!--Контейнер слайдера — div с классом sliderA. Каждый кадр слайдера описывается трёмя тегами:-->
+
+      <!--Радиокнопкой (input type="radio"), отвечающей за состояние данного кадра (видно / не видно)-->
+      <!--Меткой label, отвечающей за отображение кнопки перехода на данный слайдер.-->
+      <!--Тегом div в котором находится содержимое кадра.-->
+      <div class="slide3">
+        <div class="slide-image-block-control">
+          <img class="slide-image" src="img/slider-3.png" width="526" height="334"
+               alt="Квадрокоптер">
+        </div>
+        <div class="slide-description-block">
+          <h2 class="visually-hidden">Квадрокоптеры</h2>
+          <p class="slide-description-paragraph">Порхает как бабочка,<br>
+            жалит как пчела!</p>
+          <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+            лазером,<br>
+            замаскированным под стандартную камеру.</p>
+          <a class="slide-description-more" href="#">Подробнее</a>
+          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+          <div class="slider-button-monopode">
+            <img src="img/slider-button-empty.png">img
+            <img src="img/slider-button.png">img
+            <img src="img/slider-button-empty.png">img
+          </div>
+          <table class="slide-description-table">
+            <tr class="slide-description-tr">
+              <td class="slide-description-td">800м</td>
+              <td class="slide-description-td">50м</td>
+            </tr>
+            <tr>
+              <th class="slide-description-th">Дальность полета</th>
+              <th class="slide-description-th">Радиус поражения</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <label for="slider1_1"></label>
     </div>
+    <!--Отображение радиокнопок нам не нужно, скрываем их:-->
+    <!--.sliderA > input {-->
+    <!--display: none;-->
+    <!--}-->
+<!--Не понимаю зачем скрывать, не понимаю верхние 3 строки!!!!!!!!!!!!!!!-->
     </div>
   </section>
   <section class="products">
@@ -320,32 +358,33 @@
     <a href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
     <img src="img/logo-html.png" alt="HTML-academy">
   </div>
-  <form class="write-us" action="#">
-    <h2 class="visually-hidden">Регистрация</h2>
-    <img src="img/modal-close.png">
-    <div class="write-us-name">
-      <label for="nameid">Ваше имя: </label> <br>
-      <input type="text" id="nameid" size=”15” maxlength=”36”>
-    </div>
-    <div class="write-us-e-mail">
-      <label for="e-mail">Ваш e-mail: </label> <br>
-      <input type="text" id="e-mail" size=”15” maxlength=”36”>
-    </div>
-    <div class="write-us-letter-text">
-      <label for="letter-text">Текст письма:</label> <br>
-      <input type="text" id="letter-text" size=”36” maxlength=”75”>
-    </div>
-    <button type="submit">Отправить</button>
-    <button type="reset">"Очистить"></button>
-  </form>
-  <div class="map">
-    <a class="map-link" href="#"><img src="img/modal-close.png"></a>
-  </div>
-
 </footer>
+<form class="write-us" action="#">
+  <h2 class="visually-hidden">Регистрация</h2>
+  <img src="img/modal-close.png">
+  <div class="write-us-name">
+    <label for="nameid">Ваше имя: </label> <br>
+    <input type="text" id="nameid" size=”15” maxlength=”36”>
+  </div>
+  <div class="write-us-e-mail">
+    <label for="e-mail">Ваш e-mail: </label> <br>
+    <input type="text" id="e-mail" size=”15” maxlength=”36”>
+  </div>
+  <div class="write-us-letter-text">
+    <label for="letter-text">Текст письма:</label> <br>
+    <textarea type="text" id="letter-text" size=”36” maxlength=”75”></textarea>
+  </div>
+  <button type="submit">Отправить</button>
+  <button type="reset">"Очистить"></button>
+</form>
+<div class="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473186!2d37.52742931545037!3d55.687034004530645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1528549973347"
+    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 </body>
 </html>
-карта
+
 
 <!--**********************************************-->
 <!-- Где всплывающие окна ??? -->
