@@ -3,16 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <div class="logo">
     <a class="logo-text" href="index.html">Device </a>
   </div>
+  <!--доделать форму link итд!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
   <div class="user-interface">
-    <span class="user-form"></span>
-    <img src=" img/search.png">
-    <input type="search" placeholder="Поиск по сайту"/>
+    <form action="site-search">
+      <img src=" img/search.png">
+      <input type="search" id="searchid" size=”15” maxlength=”36”>
+      <label for="searchid">Поиск по сайту</label> <br>
+    </form>
     <ul class="user-buttons">
       <li><a class="user-button" href="#"><img src="img/user.png">Войти</a></li>
       <li><a class="user-button" href="#"><img src="img/compare.png">Сравнить</a></li>
@@ -46,194 +52,146 @@
   <h1 class="visually-hidden">Интернет магазин Device</h1>
   <section class="slides">
     <h2 class="visually-hidden">Слайде товаров</h2>
-    <!--Простой слайдер с анимированным переключением кадров-->
-    <!--Начнём создание слайдера с такого кода:-->
-    <div class='sliderA'>
-      <input type="radio" name="slider1" id="slider1_1" checked="checked">
-      <label for="slider1_1"></label>
-      <!--Контейнер слайдера — div с классом sliderA. Каждый кадр слайдера описывается трёмя тегами:-->
-
-      <!--Радиокнопкой (input type="radio"), отвечающей за состояние данного кадра (видно / не видно)-->
-      <!--Меткой label, отвечающей за отображение кнопки перехода на данный слайдер.-->
-      <!--Тегом div в котором находится содержимое кадра.-->
-      <div class="slide slide1">
-        <div class="slide-image-block-monopode">
-          <img class="slide-image" src="img/slider-1.png" width="384" height="486"
-               alt="Моноподы селфи палки">
-        </div>
-        <div class="slide-description-block">
-          <!--**********************************************-->
-          <!--изменить тип заголовка и в остальных слайдах также -->
-          <!--**********************************************-->
-          <h2 class="visually-hidden">палки для селфи</h2>
-          <p class="slide-description-paragraph">Делай селфи <br>
-            как Бен Стиллер!</p>
-          <!--**********************************************-->
-          <!--текст изменить на оригинальный то что в макете -->
-          <!--**********************************************-->
-          <p class="slide-description-paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
-            Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм. </p>
-          <a class="slide-description-more" href="#">Подробнее</a>
-          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-          <div class="slider-button-monopode">
-            <img src="img/slider-button.png">img
-            <img src="img/slider-button-empty.png">img
-            <img src="img/slider-button-empty.png">img
-          </div>
-          <table class="slide-description-table">
-            <tr class="slide-description-tr">
-              <td class="slide-description-td">8,5м</td>
-              <td class="slide-description-td">5кг</td>
-              <td class="slide-description-td">карбон</td>
-            </tr>
-            <tr>
-              <th class="slide-description-th">высота</th>
-              <th class="slide-description-th">вес</th>
-              <th class="slide-description-th">материал</th>
-            </tr>
-          </table>
-        </div>
+    <div class="slide1">
+      <div class="slide-image-block-monopode">
+        <img class="slide-image" src="img/slider-1.png" width="384" height="486"
+             alt="Моноподы селфи палки">
       </div>
-      <!--Mетка идущая после первого кадра, активирует второй кадр. -->
-      <!--Метка, расположенная после второго кадра, активирует третий кадр; -->
-      <!--после третьего — чертвёртый. Последняя метка активирует первый кадр.-->
-      <label for="slider1_2">2</label>
-
-      <input type="radio" name="slider1" id="slider1_2">
-      <label for="slider1_2"></label>
-      <!--Контейнер слайдера — div с классом sliderA. Каждый кадр слайдера описывается трёмя тегами:-->
-
-      <!--Радиокнопкой (input type="radio"), отвечающей за состояние данного кадра (видно / не видно)-->
-      <!--Меткой label, отвечающей за отображение кнопки перехода на данный слайдер.-->
-      <!--Тегом div в котором находится содержимое кадра.-->
-      <div class="slide slide2">
-        <div class="slide-image-block-control">
-          <img class="slide-image" src="img/slider-2.png" width="345" height="485"
-               alt="Браслет для контроля веса">
+      <div class="slide-description-block">
+               <h2 class="visually-hidden">палки для селфи</h2>
+        <p class="slide-description-paragraphs">Делай селфи <br>
+          как Бен Стиллер!</p>
+                <p class="slide-description-paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
+          Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм. </p>
+        <a class="slide-description-more" href="#">Подробнее</a>
+        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+        <div class="slider-button-monopode">
+          <img src="img/slider-button.png">img
+          <img src="img/slider-button-empty.png">img
+          <img src="img/slider-button-empty.png">img
         </div>
-        <div class="slide-description-block">
-          <h2 class="visually-hidden">браслет для контроля веса</h2>
-          <p class="slide-description-paragraph">Худеем правильно!</p>
-          <p class="slide-description-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-            не пропускать занятия и соблюдать диету.</p>
-          <a class="slide-description-more" href="#">Подробнее</a>
-          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-          <div class="slider-button-monopode">
-            <img src="img/slider-button-empty.png">img
-            <img src="img/slider-button.png">img
-            <img src="img/slider-button-empty.png">img
-          </div>
-          <table class="slide-description-table">
-            <tr class="slide-description-tr">
-              <td class="slide-description-td">48ч</td>
-            </tr>
-            <tr>
-              <th class="slide-description-th">Без подзарядки</th>
-            </tr>
-          </table>
-        </div>
+        <table class="slide-description-table">
+          <tr class="slide-description-tr">
+            <td class="slide-description-td">8,5м</td>
+            <td class="slide-description-td">5кг</td>
+            <td class="slide-description-td">карбон</td>
+          </tr>
+          <tr>
+            <th class="slide-description-th">высота</th>
+            <th class="slide-description-th">вес</th>
+            <th class="slide-description-th">материал</th>
+          </tr>
+        </table>
       </div>
-      <label for="slider1_3"></label>
-
-      <input type="radio" name="slider1" id="slider1_3">
-      <label for="slider1_3"></label>
-      <!--Контейнер слайдера — div с классом sliderA. Каждый кадр слайдера описывается трёмя тегами:-->
-
-      <!--Радиокнопкой (input type="radio"), отвечающей за состояние данного кадра (видно / не видно)-->
-      <!--Меткой label, отвечающей за отображение кнопки перехода на данный слайдер.-->
-      <!--Тегом div в котором находится содержимое кадра.-->
-      <div class="slide slide3">
-        <div class="slide-image-block-control">
-          <img class="slide-image" src="img/slider-3.png" width="526" height="334"
-               alt="Квадрокоптер">
-        </div>
-        <div class="slide-description-block">
-          <h2 class="visually-hidden">Квадрокоптеры</h2>
-          <p class="slide-description-paragraph">Порхает как бабочка,<br>
-            жалит как пчела!</p>
-          <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-            лазером,<br>
-            замаскированным под стандартную камеру.</p>
-          <a class="slide-description-more" href="#">Подробнее</a>
-          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-          <div class="slider-button-monopode">
-            <img src="img/slider-button-empty.png">img
-            <img src="img/slider-button.png">img
-            <img src="img/slider-button-empty.png">img
-          </div>
-          <table class="slide-description-table">
-            <tr class="slide-description-tr">
-              <td class="slide-description-td">800м</td>
-              <td class="slide-description-td">50м</td>
-            </tr>
-            <tr>
-              <th class="slide-description-th">Дальность полета</th>
-              <th class="slide-description-th">Радиус поражения</th>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <label for="slider1_1"></label>
     </div>
-    <!--Отображение радиокнопок нам не нужно, скрываем их:-->
-    <!--.sliderA > input {-->
-    <!--display: none;-->
-    <!--}-->
-<!--Не понимаю зачем скрывать, не понимаю верхние 3 строки!!!!!!!!!!!!!!!-->
+    <div class="slide2">
+      <div class="slide-image-block-control">
+        <img class="slide-image" src="img/slider-2.png" width="345" height="485"
+             alt="Браслет для контроля веса">
+      </div>
+      <div class="slide-description-block">
+        <h2 class="visually-hidden">браслет для контроля веса</h2>
+        <p class="slide-description-paragraph">Худеем правильно!</p>
+        <p class="slide-description-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+          не пропускать занятия и соблюдать диету.</p>
+        <a class="slide-description-more" href="#">Подробнее</a>
+        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+        <div class="slider-button-monopode">
+          <img src="img/slider-button-empty.png">img
+          <img src="img/slider-button.png">img
+          <img src="img/slider-button-empty.png">img
+        </div>
+        <table class="slide-description-table">
+          <tr class="slide-description-tr">
+            <td class="slide-description-td">48ч</td>
+          </tr>
+          <tr>
+            <th class="slide-description-th">Без подзарядки</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="slide3">
+      <div class="slide-image-block-control">
+        <img class="slide-image" src="img/slider-3.png" width="526" height="334"
+             alt="Квадрокоптер">
+      </div>
+      <div class="slide-description-block">
+        <h2 class="visually-hidden">Квадрокоптеры</h2>
+        <p class="slide-description-paragraph">Порхает как бабочка,<br>
+          жалит как пчела!</p>
+        <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+          лазером,<br>
+          замаскированным под стандартную камеру.</p>
+        <a class="slide-description-more" href="#">Подробнее</a>
+        <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
+        <div class="slider-button-monopode">
+          <img src="img/slider-button-empty.png">img
+          <img src="img/slider-button.png">img
+          <img src="img/slider-button-empty.png">img
+        </div>
+        <table class="slide-description-table">
+          <tr class="slide-description-tr">
+            <td class="slide-description-td">800м</td>
+            <td class="slide-description-td">50м</td>
+          </tr>
+          <tr>
+            <th class="slide-description-th">Дальность полета</th>
+            <th class="slide-description-th">Радиус поражения</th>
+          </tr>
+        </table>
+      </div>
     </div>
   </section>
   <section class="products">
     <h2 class="visually-hidden"> Продукция интернет магазина Device </h2>
-    <a class="product">
+    <a class="product-section">
       <div class="product-img-wrapper">
-        <img class="product-img" src="img/popular-1.png" width="100" height="100" alt="Виртуальная реальность">
+        <img class="product-img" src="img/popular-1.png"  alt="Виртуальная реальность">
       </div>
       <h3>Виртуальная реальность</h3>
     </a>
     <a class="product-section">
       <div class="product-img-wrapper">
-        <img class="product-img" src="img/popular-2.png" width="100" height="100" alt="Моноподы для селфи">
+        <img class="product-img" src="img/popular-2.png"  alt="Моноподы для селфи">
       </div>
       <h3>Моноподы для селфи</h3>
     </a>
     <a class="product-section">
       <div class="product-img-wrapper">
-        <img class="product-img" src="img/popular-3.png" width="100" height="100" alt="Экшн камеры">
+        <img class="product-img" src="img/popular-3.png"  alt="Экшн камеры">
       </div>
       <h3>Экшн камеры</h3>
     </a>
     <a class="product-section">
       <div class="product-img-wrapper">
-        <img class="product-img" src="img/popular-4.png" width="100" height="100" alt="Фитнес браслеты">
+        <img class="product-img" src="img/popular-4.png" alt="Фитнес браслеты">
       </div>
       <h3>Фитнес браслеты</h3>
     </a>
     <a class="product-section">
       <div class="product-img-wrapper">
-        <img class="product-img" src="img/popular-5.png" width="100" height="100" alt="Умные часы">
+        <img class="product-img" src="img/popular-5.png" alt="Умные часы">
       </div>
       <h3>Умные часы</h3>
     </a>
     <a class="product-section">
       <div class="product-img-wrapper">
-        <img class="product-img" src="img/popular-6.png" width="100" height="100" alt="Квадрокоптеры">
+        <img class="product-img" src="img/poppular-6.png" alt="Квадрокоптеры">
       </div>
       <h3>Квадрокоптеры</h3>
     </a>
   </section>
-  <section class="slides-services">
-    <h2 class="visually-hidden">Слайды хитов продаж магазина</h2>
+  <section class="slide-services">
+    <h2 class="visually-hidden">Слайды услуг магазина</h2>
     <!--**********************************************-->
     <!--неправильная структура блоков на данном этапе это возможно
       --но дальше это исправим.
       --Пусть этот комментарий буду здесь чтобы не забыть -->
     <!--**********************************************-->
-    <div class="slide-delivery">
-      <div class="slide-delivery-image-begin">
-        <img class="delivery-image-begin" src="#" width="300" height="400" alt="Условия доставки">
-      </div>
-      <div class="slide-delivery-block">
-        <h3>Доставка</h3>
+    <div class="slide-service">
+      <div class="slide-block">
+        <h3 class="slide-block-service">Доставка</h3>
         <!--**********************************************-->
         <!--нужны классы для тегов и в соседних блоков также -->
         <!--**********************************************-->
@@ -243,42 +201,34 @@
           заработаем, поднимая его на ваш этаж.
         </p>
       </div>
-      <div class="slide-delivery-image-end">
-        <img class="delivery-image-end" src="img/delivery.png" width="200" height="200" alt="Бегущий человечек">
+      <div class="slide-image">
+        <img class="image-end" src="img/delivery.png"  alt="Бегущий человечек">
       </div>
     </div>
-    <div class="slide-warranty">
-      <div class="slide-warranty-image-begin">
-        <img class="warranty-image-begin" src="img/warranty.png" width="300" height="400" alt="Условия Гарантия">
-      </div>
-      <div class="slide-warranty-block">
-        <h3>Гарантия</h3>
+    <div class="slide-service">
+      <div class="slide-block">
+        <h3 class="slide-block-service">Гарантия</h3>
         <p>
           Если из-за возгорания купленного у нас товара у вас сгорит<br>
           дом - не переживайте, мы выдадем вам новый.<br>
           Товар, не дом, конечно же.
         </p>
       </div>
-      <div class="slide-warranty-image-end">
-        <img class="warranty-image-end" src="#" width="200" height="200"
-             alt="Трубка с облачком,обозначающим процесс консультации">
+      <div class="slide-image-end">
+        <img class="image-end" src="img/warranty.png"alt="Условия Гарантия">
       </div>
     </div>
-    <div class="slide-credit">
-      <div class="slide-credit-image-begin">
-        <img class="credit-image-begin" src="img/credit.png" width="300" height="400" alt="Условия Кредит">
-      </div>
-      <div class="slide-credit-block">
-        <h3>Кредит</h3>
+    <div class="slide-service">
+      <div class="slide-block">
+        <h3 class="slide-block-service">Кредит</h3>
         <p>
           Залезть в долговую яму стало проще! Кредитные<br>
           консультанты подберут для вас наиболее выгодные<br>
           условия кредита. Выгодные для нашего банка, разумеется.
         </p>
       </div>
-      <div class="slide-credit-image-end">
-        <img class="credit-image-end" src="#" width="200" height="200"
-             alt="Несчастный кредитор, упаси Госспади">
+      <div class="slide-image-end">
+        <img class="image-end" src="img/credit.png"  alt="Условия Кредит">
       </div>
     </div>
   </section>

@@ -1,60 +1,138 @@
-
-/*Простой слайдер с анимированным переключением кадров*/
-.sliderA {
-  width: 1160px;
-  height: 486px;
-  border: 1px solid #888;
-  position: relative;
-  text-align: right;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
 }
-/*Оформляем метки-кнопки. Кода много, но ничего сложного нет:*/
-
-.sliderA > input + label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 8px;
-  background: rgba(90, 90, 90, 0.8);
-  border: 2px solid rgba(190, 190, 190, 0.8);
-
-  cursor: pointer;
-
-  z-index: 100;
-  position: relative;
-
-  margin-right: 4px;
-  top: 90%;
-
-  transition: background 0.8s ease-out 0s;
+a {
+  text-decoration: none;
 }
 
-.sliderA > input + label:hover {
-  background: rgba(250, 250, 250, 0.8);
+.logo-text {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 26.46px;
+  color: #000000;
+  font-weight: bold;
 }
 
-.sliderA > input:checked + label {
-  background: rgba(220, 220, 220, 0.8);
+.main-header {
+  background-color: #f7e296;
+}
+.search {
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 15px;
+line-height: 30px;
+font-weight: 300;
+color: #464646;
+}
+.user-button {
+
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/*Чтобы полностью отключить элемент и сделать его прозрачным для щелчков мышью, понадобится второе свойство: visibility: hidden.
-Однако visibility не позволяет задать частичную прозрачность. Элемент либо виден, либо нет.*/
-/*Поэтому мы будем при помощи transition анимировать оба свойства, чтобы добиться нужного нам эффекта.
-Суть метода в следующем:*/
-/*Когда пользователь переключает кадр, новый кадр появляется с visibility: visible, но с opacity: 0.*/
-/*Затем происходит анимация значения opacity у обоих кадров. У старого кадра она плавно опускается до нуля,
-а у нового — плавно поднимается до единицы.*/
-/*После завершения анимации, visibility старого кадра устанавливается в значение hidden,
-чтобы он не мешал щелчкам мышью по новому кадру.*/
-/*Вот такой код у меня получился:*/
+.nav-link {
 
-.sliderA > div {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sub-nav-item{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+/*!*Закончился хедер, начинается боди*!_________________________________*/
+
+.slide-description-paragraphs {
+
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.slide-description-paragraph {
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+.slide-description-more {
+
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.slide-description-td {
+
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 36px;
+  line-height:48px;
+}
+.slide-description-th {
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgb(70, 70, 70);
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 300;
 }
 
-.sliderA > input:checked + label + div {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+.product-section{
+
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height:24px;
+  color: rgb(0, 0, 0);
+
 }
+
+.product-img {
+
+  width: 160px;
+  height: 160px;
+}
+.slide-services {
+  background-color: #e5e5e5;
+}
+ .slide-block-service {
+
+   font-family: "Gilroy","Arial", sans-serif;
+   color: rgb(247, 225, 132);
+   text-transform: uppercase;
+   font-size: 18px;
+   font-weight: bold;
+   line-height:24px;
+ }
+
+.Layer_7_copy {
+  background-image: url("Layer 7 copy.png");
+  position: absolute;
+  left: 140px;
+  top: 1222px;
+  width: 278px;
+  height: 40px;
+  z-index: 72;
+}
+
