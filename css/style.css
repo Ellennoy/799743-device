@@ -57,7 +57,6 @@ color: #464646;
 /*!*Закончился хедер, начинается боди*!_________________________________*/
 
 .slide-description-paragraphs {
-
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
@@ -65,7 +64,6 @@ color: #464646;
   font-weight: bold;
 }
 .slide-description-paragraph {
-
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -73,7 +71,6 @@ color: #464646;
   color: #464646;
 }
 .slide-description-more {
-
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -82,7 +79,6 @@ color: #464646;
   text-transform: uppercase;
 }
 .slide-description-td {
-
   font-family: "Gilroy","Arial", sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 300;
@@ -90,7 +86,6 @@ color: #464646;
   line-height:48px;
 }
 .slide-description-th {
-
   font-family: "Open Sans", "Arial", sans-serif;
   color: rgb(70, 70, 70);
   line-height: 20px;
@@ -99,20 +94,17 @@ color: #464646;
 }
 
 .product-section{
-
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height:24px;
-  color: rgb(0, 0, 0);
-
-}
+  color: rgb(0, 0, 0);}
 
 .product-img {
-
   width: 160px;
   height: 160px;
 }
+/*Серый фон доставки итд*/
 .slide-services {
   background-color: #e5e5e5;
 }
@@ -125,14 +117,46 @@ color: #464646;
    font-weight: bold;
    line-height:24px;
  }
+.logotype
+{width: 260px;
+  height: 100px;}
 
-.Layer_7_copy {
-  background-image: url("Layer 7 copy.png");
-  position: absolute;
-  left: 140px;
-  top: 1222px;
-  width: 278px;
-  height: 40px;
-  z-index: 72;
+ .about-us-h3 {
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 48px;
+  color: rgb(0, 0, 0);}
+
+ .delivery-company-item {
+   font-family: "Gilroy","Arial", sans-serif;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 30px;
+   color: rgb(70, 70, 70);}
+
+.contact-link {
+  font-size: 18px;
+  line-height: 24px;
+  font-family:  "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;}
+
+.contact {
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 48px;
+  color: rgb(0, 0, 0);
 }
-
+.contact-link-map
+{width: 560px;
+  height: 222px;
+}
+/*FOOTEEEEEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.main-footer
+{width: 1440px;
+  height: 323px;
+  background-color: #464646;
+}
