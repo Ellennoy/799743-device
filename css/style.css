@@ -160,3 +160,106 @@ color: #464646;
   height: 323px;
   background-color: #464646;
 }
+.footer-adress {
+
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: 300;
+}
+/*.logo-text {*/
+  /*font-size: 48px;*/
+  /*font-family: "Gilroy","Arial", sans-serif;*/
+  /*color: #ffc600;*/
+  /*font-weight: bold;*/
+  /*text-transform: uppercase;*/
+ /*Что делать если высота строки АВТО????????????????????????? */
+}
+/*Цвет у параметров НАЙТИ итд не меняется на белый? В чем причина?*/
+.nav-footer-item {
+  font-size: 18px;
+  font-family: "Gilroy","Arial", sans-serif;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.user-buttons-footer {
+  font-size: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 36px;
+  text-align: center;
+}
+/*____________________________________________________________________________________*/
+/*WRITE US!!!!!!!!!!!!!*/
+/*Это просто ПИЗДЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЦ!*/
+Покой
+
+Наведение
+
+input:hover, textarea:hover {
+  background: #f2f2f2; /* Цвет фона под окантовкой */
+}
+
+Фокус
+
+input:focus, textarea:focus {
+  background: #ffffff; /* Цвет фона под окантовкой */
+  border: 2px solid #ffc600; /* Рамка вокруг текстового поля */
+}
+
+
+Невалидное значение
+input:invalid {
+  background: #f6dada; /* Красный цвет фона */
+}
+input:valid {
+  background: #ffffff; /* white цвет фона */
+}
+/*--------_______________________________________________________________________________*/
+.write-us-name {
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 18px;
+}
+.write-us-e-mail {
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 18px;
+}
+.write-us-letter-text{
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 18px;
+}
+.button {
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ffffff;}
+/*list2_______________________________________*/
+.titel h2 {
+  font-family: "Gilroy","Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 47px;}
+
+.breadcrumbs a {
+  font-size: 14px;
+  font-family: "OpenSans" ,"Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.302);
+  line-height: 24px;
+  font-weight: 300;
+
+}
