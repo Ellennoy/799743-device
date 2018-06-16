@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header container">
   <div class="logo">
     <a class="logo-text" href="index.html">Device </a>
   </div>
@@ -144,53 +144,58 @@
     </div>
   </section>
   <section class="products">
-    <div class="test">sdadasdasdasd</div>
-    <h2 class="visually-hidden"> Продукция интернет магазина Device </h2>
-    <ul class="products-items">
-      <li class="products-item">
-        <a href="#" class="products-link">
-          <div class="product-img-wrapper">
-            <img class="product-img-1" src="img/popular-1.png" alt="Виртуальная реальность">
+    <div class="products-wrapper container">
+      <h2 class="visually-hidden"> Продукция интернет магазина Device </h2>
+      <ul class="products-items">
+        <li class="products-item">
+          <a href="catalog.html" class="products-link">
+            <div class="products-img-wrapper">
+              <img class="products-img" src="img/popular-1.png" alt="Виртуальная реальность">
+            </div>
+            <h3 class="products-title">Виртуальная реальность</h3>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="catalog.html" class="products-link">
+            <div class="products-img-wrapper products-img-wrapper-end">
+              <img class="products-img" src="img/popular-2.png" alt="Моноподы для селфи">
+            </div>
+            <h3 class="products-title">Моноподы для селфи</h3>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="catalog.html" class="products-link">
+            <div class="products-img-wrapper">
+              <img class="products-img" src="img/popular-3.png" alt="Экшн камеры">
+            </div>
+            <h3 class="products-title">Экшн камеры</h3>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="catalog.html" class="products-link">
+            <div class="products-img-wrapper">
+              <img class="products-img" src="img/popular-4.png" alt="Фитнес браслеты">
+            </div>
+            <h3 class="products-title">Фитнес браслеты</h3>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="catalog.html" class="products-link">
+            <div class="products-img-wrapper">
+              <img class="products-img" src="img/popular-5.png" alt="Умные часы">
+            </div>
+            <h3 class="products-title">Умные часы</h3>
+          </a>
+        </li>
+        <li class="products-item"><a href="#" class="products-link">
+          <div class="products-img-wrapper">
+            <img class="products-img" src="img/poppular-6.png" alt="Квадрокоптеры">
           </div>
-          <h3>Виртуальная реальность</h3>
-        </a></li>
-      <li class="products-item">
-        <a href="#" class="products-link">
-          <div class="product-img-wrapper">
-            <img class="product-img-2" src="img/popular-2.png" alt="Моноподы для селфи">
-          </div>
-          <h3>Моноподы для селфи</h3>
+          <h3 class="products-title">Квадрокоптеры</h3>
         </a>
-      </li>
-      <li class="products-item"><a href="#" class="products-link">
-        <div class="product-img-wrapper">
-          <img class="product-img-3" src="img/popular-3.png" alt="Экшн камеры">
-        </div>
-        <h3>Экшн камеры</h3>
-      </a>
-      </li>
-      <li class="products-item"><a href="#" class="products-link">
-        <div class="product-img-wrapper">
-          <img class="product-img-4" src="img/popular-4.png" alt="Фитнес браслеты">
-        </div>
-        <h3>Фитнес браслеты</h3>
-      </a>
-      </li>
-      <li class="products-item"><a href="#" class="products-link">
-        <div class="product-img-wrapper">
-          <img class="product-img-5" src="img/popular-5.png" alt="Умные часы">
-        </div>
-        <h3>Умные часы</h3>
-      </a>
-      </li>
-      <li class="products-item"><a href="#" class="products-link">
-        <div class="product-img-wrapper">
-          <img class="product-img-6" src="img/poppular-6.png" alt="Квадрокоптеры">
-        </div>
-        <h3>Квадрокоптеры</h3>
-      </a>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="slide-services">
     <h2 class="visually-hidden">Слайды услуг магазина</h2>
@@ -281,41 +286,40 @@
     </div>
   </section>
 </main>
-<footer class="main-footer">
-  <div class="main-footer-contact">
-    <div class="logo">
-      <a class="logo-text" href="index.html">Device </a>
+<footer class="footer">
+  <div class="footer-wrapper container">
+    <div class="main-footer-contact">
+      <div class="logo">
+        <a class="logo-text" href="index.html">Device </a>
+      </div>
+      <p class="footer-adress">
+      <address>г.Москва, улица Строителей, 15</address>
+      </p>
+      <img src="img/Layer 6 copy 5.png">
     </div>
-    <p class="footer-adress">
-    <address>г.Москва, улица Строителей, 15</address>
-    </p>
-    <img src="img/Layer 6 copy 5.png">
-  </div>
-  <!--**********************************************-->
-  <!-- молодец что использовала nav хотя по тегу много споров -->
-  <!--**********************************************-->
-  <nav class="nav-footer">
-    <ul class="nav-footer-items">
-      <li class="nav-footer-item"><a class="nav-link" href="#">Доставка</a></li>
-      <li class="nav-footer-item"><a class="nav-link" href="#">Гарантия</a></li>
-      <li class="nav-footer-item"><a class="nav-link" href="#">Контакты</a></li>
+    <nav class="nav-footer">
+      <ul class="nav-footer-items">
+        <li class="nav-footer-item"><a class="nav-link" href="#">Доставка</a></li>
+        <li class="nav-footer-item"><a class="nav-link" href="#">Гарантия</a></li>
+        <li class="nav-footer-item"><a class="nav-link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="nav-footer-websites">
+      <li class="nav-footer-website"><a class="nav-link" href="facebook.com"><img src="img/ФБ.png"></a></li>
+      <li class="nav-footer-website"><a class="nav-link" href="instagram.com"><img src="img/insta.png"></a></li>
+      <!-- (｡◕‿◕｡) -->
+      <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/Твитер.png"></a></li>
     </ul>
-  </nav>
-  <ul class="nav-footer-websites">
-    <li class="nav-footer-website"><a class="nav-link" href="facebook.com"><img src="img/ФБ.png"></a></li>
-    <li class="nav-footer-website"><a class="nav-link" href="instagram.com"><img src="img/insta.png"></a></li>
-    <!-- (｡◕‿◕｡) -->
-    <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/Твитер.png"></a></li>
-  </ul>
-  <div class="user-interface-footer">
-    <span class="user-form-footer"></span>
-    <ul class="user-buttons-footer">
-      <li><a class="user-button-footer" href="#"><img src="img/user.png">Войти</a></li>
-      <li><a class="user-button-footer" href="#"><img src="img/compare.png">Сравнить</a></li>
-      <li><a class="user-button-footer" href="#"><img src="img/cart.png">Корзина</a></li>
-    </ul>
-    <a href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
-    <img src="img/logo-html.png" alt="HTML-academy">
+    <div class="user-interface-footer">
+      <span class="user-form-footer"></span>
+      <ul class="user-buttons-footer">
+        <li><a class="user-button-footer" href="#"><img src="img/user.png">Войти</a></li>
+        <li><a class="user-button-footer" href="#"><img src="img/compare.png">Сравнить</a></li>
+        <li><a class="user-button-footer" href="#"><img src="img/cart.png">Корзина</a></li>
+      </ul>
+      <a href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
+      <img src="img/logo-html.png" alt="HTML-academy">
+    </div>
   </div>
 </footer>
 <div class="modal-write-us">
