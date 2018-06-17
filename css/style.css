@@ -168,7 +168,7 @@ a {
   font-weight: 300;
 }
 
-/*Секция продуктов с квадратиками */
+/*-------------Секция продуктов с квадратиками-------------*/
 
 .products-items {
   display: flex;
@@ -191,6 +191,7 @@ a {
   background-color: #f0c52e;
 
 }
+
 .products-img-wrapper:active .products-img {
   opacity: .3;
 }
@@ -207,6 +208,43 @@ a {
   line-height: 24px;
 }
 
+/*-------------Секция продуктов с квадратиками-------------*/
+/*-------------END-------------*/
+
+/*-------------Логотипы-------------*/
+.logotypes-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 42px;
+  padding-left: 60px;
+}
+
+.logotypes-link:hover .logotype {
+  display: none;
+}
+
+.logotypes-link:hover .logotype-hover {
+  display: block;
+}
+
+.logotype-hover {
+  display: none;
+}
+
+.logotypes-link {
+  position: relative;
+}
+.logotypes-link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/logo-1-hover.png);
+}
+/*-------------Логотипы-------------*/
+/*-------------END-------------*/
 .footer {
   background-color: #464646;
 }
