@@ -52,10 +52,20 @@ a {
   text-transform: uppercase;
 }
 
+.header-wrapper {
+  background-color: #f7e296;
+}
+
+.user-interface {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*Окно поиска*/
 .search-input {
   border: none;
   opacity: 0.3;
+  background-color: transparent;
 }
 
 .search-input:hover {
@@ -68,6 +78,7 @@ a {
 }
 
 .search-submit {
+  visibility: hidden;
   border: 2px solid #000000;
   padding-top: 20px; /*верхний внутренний отступ*/
   padding-left: 20px; /*левый внутренний отступ*/
@@ -85,6 +96,26 @@ a {
 
 .search-submit:focus {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+}
+
+.user-buttons-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-button {
+  margin-right: 40px;
+}
+
+.sub-nav-items {
+  display: none;
 }
 
 .sub-nav-link:hover {
@@ -231,24 +262,75 @@ a {
   display: none;
 }
 
-.logotypes-link {
-  position: relative;
-}
-.logotypes-link:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100px;
-  background-image: url(../img/logo-1-hover.png);
-}
+/*Не понимаю....*/
 /*-------------Логотипы-------------*/
 /*-------------END-------------*/
 .footer {
   background-color: #464646;
 }
 
+/*-------------Всплывающее окно-------------*/
+.write-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 42px;
+  padding-left: 60px;
+  background-color: #fff;
+}
+
+/*Покой*/
+
+/*Наведение*/
+
+/*input:hover, textarea:hover {*/
+/*background: #f2f2f2; !* Цвет фона под окантовкой *!*/
+/*}*/
+
+/*Фокус*/
+
+/*input:focus, textarea:focus {*/
+/*background: #ffffff; !* Цвет фона под окантовкой *!*/
+/*border: 2px solid #ffc600; !* Рамка вокруг текстового поля *!*/
+/*}*/
+
+/*Невалидное значение*/
+/*input:invalid {*/
+/*background: #f6dada; !* Красный цвет фона *!*/
+/*}*/
+/*input:valid {*/
+/*background: #ffffff; !* white цвет фона *!*/
+/*}*/
+/*!*--------_______________________________________________________________________________*!*/
+/*.write-us-name {*/
+/*font-family: "Gilroy","Arial", sans-serif;*/
+/*color: rgb(0, 0, 0);*/
+/*font-weight: bold;*/
+/*line-height: 24px;*/
+/*font-size: 18px;*/
+/*}*/
+/*.write-us-e-mail {*/
+/*font-family: "Gilroy","Arial", sans-serif;*/
+/*color: rgb(0, 0, 0);*/
+/*font-weight: bold;*/
+/*line-height: 24px;*/
+/*font-size: 18px;*/
+/*}*/
+/*.write-us-letter-text{*/
+/*font-family: "Gilroy","Arial", sans-serif;*/
+/*color: rgb(0, 0, 0);*/
+/*font-weight: bold;*/
+/*line-height: 24px;*/
+/*font-size: 18px;*/
+/*}*/
+/*.button {*/
+/*text-align: center;*/
+/*border: none;*/
+/*vertical-align: middle;*/
+/*text-transform: uppercase;*/
+/*background-color: #ffffff;}*/
+
+/*-------------Всплывающее окно-------------*/
+/*-------------END-------------*/
 /*Сервисы доставка итд*/
 /*!*Серый фон доставки итд*!*/
 /*.slide-services {*/
@@ -342,56 +424,7 @@ a {
 /*!*____________________________________________________________________________________*!*/
 /*!*WRITE US!!!!!!!!!!!!!*!*/
 /*!*Это просто ПИЗДЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЦ!*!*/
-/*Покой*/
 
-/*Наведение*/
-
-/*input:hover, textarea:hover {*/
-/*background: #f2f2f2; !* Цвет фона под окантовкой *!*/
-/*}*/
-
-/*Фокус*/
-
-/*input:focus, textarea:focus {*/
-/*background: #ffffff; !* Цвет фона под окантовкой *!*/
-/*border: 2px solid #ffc600; !* Рамка вокруг текстового поля *!*/
-/*}*/
-
-/*Невалидное значение*/
-/*input:invalid {*/
-/*background: #f6dada; !* Красный цвет фона *!*/
-/*}*/
-/*input:valid {*/
-/*background: #ffffff; !* white цвет фона *!*/
-/*}*/
-/*!*--------_______________________________________________________________________________*!*/
-/*.write-us-name {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 24px;*/
-/*font-size: 18px;*/
-/*}*/
-/*.write-us-e-mail {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 24px;*/
-/*font-size: 18px;*/
-/*}*/
-/*.write-us-letter-text{*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 24px;*/
-/*font-size: 18px;*/
-/*}*/
-/*.button {*/
-/*text-align: center;*/
-/*border: none;*/
-/*vertical-align: middle;*/
-/*text-transform: uppercase;*/
-/*background-color: #ffffff;}*/
 /*!*list2_______________________________________*!*/
 /*.titel h2 {*/
 /*font-family: "Gilroy","Arial", sans-serif;*/

@@ -8,45 +8,51 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header container">
+<header class="main-header">
   <div class="logo">
     <a class="logo-text" href="index.html">Device </a>
   </div>
-  <!--доделать форму link итд!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-  <div class="user-interface">
-    <form action="#">
-      <img src=" img/search.png">
-      <input class="search-input" type="search" size=”15” maxlength=”36” placeholder="Поиск по сайту">
-      <input class="search-submit" type="submit" value="Найти">
-    </form>
-    <ul class="user-buttons">
-      <li><a class="user-button" href="#"><img src="img/user.png">Войти</a></li>
-      <li><a class="user-button" href="#"><img src="img/compare.png">Сравнить</a></li>
-      <li><a class="user-button" href="#"><img src="img/cart.png">Корзина</a></li>
-    </ul>
+  <div class="header-wrapper container">
+    <div class="user-interface">
+      <form action="#">
+        <img src=" img/search.png">
+        <input class="search-input" type="search" size=”15” maxlength=”36” placeholder="Поиск по сайту">
+        <input class="search-submit" type="submit" value="Найти">
+      </form>
+      <div class="user-buttons">
+        <ul class="user-buttons-items">
+          <li><a class="user-button" href="#"><img src="img/user.png">Войти</a></li>
+        </ul>
+        <ul class="user-buttons-items">
+          <li><a class="user-button" href="#"><img src="img/compare.png">Сравнить</a></li>
+          <li><a class="user-button" href="#"><img src="img/cart.png">Корзина</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="nav-items">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Каталог товаров<img src="img/plus.png"></a>
+          <ul class="sub-nav-items">
+            <li class="sub-nav-item"><a class="sub-nav-link" href="#">Виртуальная реальность</a></li>
+            <li class="sub-nav-item"><a class="sub-nav-link" href="#">Моноподы для селфи</a></li>
+            <li class="sub-nav-item"><a class="sub-nav-link" href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="sub-nav-items">
+            <li class="sub-nav-item"><a class="sub-nav-link" href="#">Фитнес-браслеты </a></li>
+            <li class="sub-nav-item"><a class="sub-nav-link" href="#">Умные часы</a></li>
+          </ul>
+          <ul class="sub-nav-items">
+            <li class="sub-nav-item"><a class="sub-nav-link" href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Гарантия</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="nav">
-    <ul class="nav-items">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Каталог товаров<img src="img/plus.png"></a>
-        <ul class="sub-nav-items">
-          <li class="sub-nav-item"><a class="sub-nav-link" href="#">Виртуальная реальность</a></li>
-          <li class="sub-nav-item"><a class="sub-nav-link" href="#">Моноподы для селфи</a></li>
-          <li class="sub-nav-item"><a class="sub-nav-link" href="#">Экшн-камеры</a></li>
-        </ul>
-        <ul class="sub-nav-items">
-          <li class="sub-nav-item"><a class="sub-nav-link" href="#">Фитнес-браслеты </a></li>
-          <li class="sub-nav-item"><a class="sub-nav-link" href="#">Умные часы</a></li>
-        </ul>
-        <ul class="sub-nav-items">
-          <li class="sub-nav-item"><a class="sub-nav-link" href="#">Квадрокоптеры</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Гарантия</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-    </ul>
-  </nav>
 </header>
 <main>
   <h1 class="visually-hidden">Интернет магазин Device</h1>
@@ -258,19 +264,19 @@
       <a class="logotypes-link" href="#">
         <img class="logotype" src="img/logo-3-1.png"
              alt="Logo spgadget">
-        <img class="logotype" src="img/logo-3-1-hover.png"
+        <img class="logotype logotype-hover" src="img/logo-3-1-hover.png"
              alt="Logo spgadget">
       </a>
       <a class="logotypes-link" href="#">
         <img class="logotype" src="img/logo-3.png"
              alt="Logo GoPro-Be a Hero">
-        <img class="logotype" src="img/logo-3-hover.png"
+        <img class="logotype logotype-hover" src="img/logo-3-hover.png"
              alt="Logo GoPro-Be a Hero">
       </a>
       <a class="logotypes-link" href="#">
-        <img class="logotype" src="img/logo-4.png"
+        <img class="logotype " src="img/logo-4.png"
              alt="Logo Vive">
-        <img class="logotype" src="img/logo-4-hover.png"
+        <img class="logotype logotype-hover" src="img/logo-4-hover.png"
              alt="Logo Vive">
       </a>
     </div>
@@ -296,7 +302,9 @@
     <div class="contacts">
       <h3 class="contact">Контакты</h3>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
-        проверить работоспособность покупки. Всякое бывает.
+        justify-content: space-between;
+        padding-right: 42px;
+        padding-left: 60px; проверить работоспособность покупки. Всякое бывает.
       </p>
       <p>
         <a class="contact-link-map" href="#"><img src="img/map.jpg"></a></p>
@@ -341,24 +349,26 @@
   </div>
 </footer>
 <div class="modal-write-us">
-  <form class="write-us" action="#">
-    <h2 class="visually-hidden">Регистрация</h2>
-    <img src="img/modal-close.png">
-    <div class="write-us-name">
-      <label for="nameid">Ваше имя: </label> <br>
-      <input type="text" id="nameid" size=”15” maxlength=”36”>
-    </div>
-    <div class="write-us-e-mail">
-      <label for="e-mail">Ваш e-mail: </label> <br>
-      <input type="text" id="e-mail" size=”15” maxlength=”36”>
-    </div>
-    <div class="write-us-letter-text">
-      <label for="letter-text">Текст письма:</label> <br>
-      <textarea type="text" id="letter-text" size=”36” maxlength=”75”></textarea>
-    </div>
-    <button type="submit">Отправить</button>
-    <button type="reset">"Очистить"></button>
-  </form>
+  <div class="write-us-wrapper container">
+    <form class="write-us" action="#">
+      <h2 class="visually-hidden">Регистрация</h2>
+      <img src="img/modal-close.png">
+      <div class="write-us-name">
+        <label for="nameid">Ваше имя: </label> <br>
+        <input type="text" id="nameid" size=”15” maxlength=”36”>
+      </div>
+      <div class="write-us-e-mail">
+        <label for="e-mail">Ваш e-mail: </label> <br>
+        <input type="text" id="e-mail" size=”15” maxlength=”36”>
+      </div>
+      <div class="write-us-letter-text">
+        <label for="letter-text">Текст письма:</label> <br>
+        <textarea type="text" id="letter-text" size=”36” maxlength=”75”></textarea>
+      </div>
+      <button type="submit">Отправить</button>
+      <button type="reset">"Очистить"></button>
+    </form>
+  </div>
 </div>
 <div class="map">
   <iframe
