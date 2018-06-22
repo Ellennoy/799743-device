@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style:normal;
+  src: local("Gilroy"), url(/fonts/Gilroy-ExtraBold.otf) format('otf');
+}
+
 html {
   box-sizing: border-box;
 }
@@ -18,7 +24,7 @@ body {
 
 /*Убрать точки в списке*/
 ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -98,6 +104,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*________________войти___________________*/
 .user-buttons {
   display: flex;
   justify-content: space-between;
@@ -108,22 +115,18 @@ a {
 .user-buttons-items {
   display: flex;
   justify-content: space-between;
+  width: 50%;
 }
 
 .user-button {
   margin-right: 40px;
+
 }
 
-.sub-nav-items {
-  display: none;
-}
-
-.sub-nav-link:hover {
-  opacity: .6;
-}
-
-.sub-nav-link:focus {
-  opacity: .3;
+/*________________доставка гарантия контакты___________________________*/
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Кнопки доставка гарантия контакты + Каталог*/
@@ -131,6 +134,41 @@ a {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.sub-nav-tabel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-item-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 40px;
+}
+
+/*__________________фитнес браслеты умные часы_________________________*/
+
+.sub-nav-link:hover {
+  opacity: .6;
+}
+
+.sub-nav-link:focus {
+  opacity: .3;
 }
 
 .nav-link:hover {
@@ -142,6 +180,37 @@ a {
 }
 
 /*!*!*Закончился хедер, начинается боди*!_________________________________*!*/
+.slides {
+  background-image: linear-gradient(to bottom, #f7e296 100px, transparent 100px);
+}
+
+.slides-wrapepr {
+  display: flex;
+}
+
+.slide {
+  display: none;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*шрифт не соответствует*/
+.slide:before {
+  content: "01";
+  font-size: 180px;
+  color: #ffff;
+  position: absolute;
+  height: 179px;
+  top: -50px;
+  right: 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.slide.active {
+  display: flex;
+}
 
 .slide-description-paragraphs {
   font-size: 47px;
@@ -154,50 +223,61 @@ a {
 /*Вопрос:???????????????????????????????????????????????????????????????????????????????*/
 /*!*Подробнее*!*/
 .slide-description-details {
+  display: block;
+  width: 220px;
+  text-align: center;
+  position: relative;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
-  /*padding-top: -4px; !*верхний внутренний отступ*!*/
-  padding-left: 46px; /*левый внутренний отступ*/
-  padding-right: 46px; /*правый внутренний отступ*/
-  /*padding-bottom: -4px; !*нижний внутренний отступ*!*/
-  background-color: #f0c52e;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
 }
 
-.slide-description-details:hover {
-  opacity: 1;
-  padding-top: 14px; /*верхний внутренний отступ*/
-  padding-left: 46px; /*левый внутренний отступ*/
-  padding-right: 46px; /*правый внутренний отступ*/
-  padding-bottom: 14px; /*нижний внутренний отступ*/
+.slide-description-details:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 100%;
+  height: 8px;
   background-color: #f0c52e;
+  transition: all 0.5s linear;
 }
 
-.slide-description-details:focus {
+.slide-description-details:hover:before {
+  top: 0;
+  height: 48px;
+}
+
+.slide-description-details:active {
   opacity: .6;
-  padding-top: 14px; /*верхний внутренний отступ*/
-  padding-left: 46px; /*левый внутренний отступ*/
-  padding-right: 46px; /*правый внутренний отступ*/
-  padding-bottom: 14px; /*нижний внутренний отступ*/
-  background-color: #f0c52e;
 }
 
 .slide-description-td {
+  padding-right: 80px;
   font-size: 36px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   color: #000000;
+
 }
 
 .slide-description-th {
   line-height: 20px;
   font-size: 13px;
   font-weight: 300;
+  text-align: left;
 }
+
+/*__________________slider________________________*/
 
 /*-------------Секция продуктов с квадратиками-------------*/
 
@@ -262,11 +342,180 @@ a {
   display: none;
 }
 
-/*Не понимаю....*/
-/*-------------Логотипы-------------*/
-/*-------------END-------------*/
+/*Глава о разорении кредиторов*/
+.slide-service {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Расстояние между элементами ? Расстояние между элементами ? Расстояние между элементами ?*/
+
+/*-------------О нас Контакты-------------*/
+.info-company-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 40%;
+}
+
+.about-us-title,
+.contact-title {
+  font-size: 30px;
+}
+
+/*_____Кнопки напишите нам подробнее о нас________________*/
+.contact-link,
+.about-us-link {
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 46px; /*левый внутренний отступ*/
+  padding-right: 46px; /*правый внутренний отступ*/
+}
+
+.contact-link:before,
+.about-us-link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
+.contact-link:hover,
+.about-us-link:hover {
+  opacity: 1;
+  padding-top: 14px; /*верхний внутренний отступ*/
+  padding-bottom: 14px; /*нижний внутренний отступ*/
+  background-color: #f0c52e;
+}
+
+.contact-link:focus,
+.about-us-link:focus {
+  opacity: .6;
+}
+
+/*_____Кнопки напишите нам подробнее о нас_ END_______________*/
+.delivery-company-items {
+  list-style: circle;
+}
+
+/*____________________________________________________________________________*/
 .footer {
   background-color: #464646;
+}
+
+/*Логотип*/
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 26.46px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Одинаковые логотипы и в хедере и в футере, только цвет разный.*/
+.logo-footer {
+  color: #f0c52e;
+}
+
+.address {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.user-interface {
+  display: flex;
+  justify-content: space-between;
+}
+
+.websites-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 440px;
+}
+
+/*________________войти___________________*/
+.user-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+
+}
+
+.user-buttons-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.user-button {
+  margin-right: 40px;
+
+}
+
+/*________________доставка гарантия контакты___________________________*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Кнопки доставка гарантия контакты + Каталог*/
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sub-nav-tabel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-item-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 40px;
 }
 
 /*-------------Всплывающее окно-------------*/
