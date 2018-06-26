@@ -2,14 +2,14 @@
   font-family: 'Gilroy';
   font-style: bold;
   font-weight: 700;
-  src: local('Gilroy ExtraBold'),local('Gilroy-ExtraBold'),url(../fonts/gilroyextrabold.woff2) format('woff2')
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url(../fonts/gilroyextrabold.woff2) format('woff2')
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 400;
-  src: local('Gilroy Light'),local('Gilroy-Light'),url(../fonts/gilroylight.woff2) format('woff2')
+  src: local('Gilroy Light'), local('Gilroy-Light'), url(../fonts/gilroylight.woff2) format('woff2')
 }
 
 html {
@@ -58,21 +58,39 @@ a {
 
 /*__________________________________________________________________*/
 /*Логотип*/
+
+.main-header {
+  padding-top: 17px;
+}
+
 .logo-text {
+  margin-left: 35px;
   font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 26.46px;
+  font-size: 48px;
+  line-height: 48px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .header-wrapper {
+  margin-top: -25px;
+  padding-top: 25px;
   background-color: #f7e296;
+  padding-left: 39px;
+
 }
 
 .user-interface {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 39px;
+}
+
+.user-button-icon {
+  margin-right: 15px;
 }
 
 /*Окно поиска*/
@@ -135,6 +153,7 @@ a {
 .nav {
   display: flex;
   justify-content: space-between;
+padding-left: 39px;
 }
 
 /*Кнопки доставка гарантия контакты + Каталог*/
@@ -144,20 +163,30 @@ a {
   text-transform: uppercase;
 }
 
+.nav-link-icon {
+  margin-left: 15px;
+}
+
 .sub-nav-tabel {
   display: flex;
   justify-content: space-between;
 }
-
+.nav-items {width: 550px;}
 .sub-nav {
   display: flex;
   justify-content: space-between;
 }
+.sub-nav-margin {
+  margin-left: 60px;
+}
+/*.sub-nav-items {*/
+  /*margin-left: 20px;*/
+/*}*/
 
 .nav-buttons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 500px;
 }
 
 .nav-item-buttons {
@@ -230,7 +259,7 @@ a {
 
 /*Вопрос:???????????????????????????????????????????????????????????????????????????????*/
 /*!*Подробнее*!*/
-.slide-description-details {
+.button-yellow {
   display: block;
   width: 220px;
   text-align: center;
@@ -247,7 +276,7 @@ a {
 
 }
 
-.slide-description-details:before {
+.button-yellow:before {
   z-index: -1;
   content: "";
   position: absolute;
@@ -259,12 +288,12 @@ a {
   transition: all 0.5s linear;
 }
 
-.slide-description-details:hover:before {
+.button-yellow:hover:before {
   top: 0;
   height: 48px;
 }
 
-.slide-description-details:active {
+.button-yellow:active {
   opacity: .6;
 }
 
@@ -329,13 +358,18 @@ a {
 
 /*-------------Секция продуктов с квадратиками-------------*/
 /*-------------END-------------*/
+/*Глава о разорении кредиторов*/
+.slide-service {
+  display: flex;
+  justify-content: space-between;
+}
 
+/*Расстояние между элементами ? Расстояние между элементами ? Расстояние между элементами ?*/
 /*-------------Логотипы-------------*/
 .logotypes-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-right: 42px;
-  padding-left: 60px;
+  padding: 108px 42px 108px 60px;
 }
 
 .logotypes-link:hover .logotype {
@@ -350,72 +384,103 @@ a {
   display: none;
 }
 
-/*Глава о разорении кредиторов*/
-.slide-service {
-  display: flex;
-  justify-content: space-between;
-}
-
-/*Расстояние между элементами ? Расстояние между элементами ? Расстояние между элементами ?*/
-
 /*-------------О нас Контакты-------------*/
 .info-company-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  height: 660px;
 }
 
 .about-us {
   width: 40%;
-}
 
+}
+.rectangle-info {
+  width: 80px;
+  height: 7px;
+  background: #000000;
+}
 .about-us-title,
 .contact-title {
-  font-size: 30px;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
-/*_____Кнопки напишите нам подробнее о нас________________*/
-.contact-link,
-.about-us-link {
-  position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
+.delivery-company-items {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
-  padding-left: 46px; /*левый внутренний отступ*/
-  padding-right: 46px; /*правый внутренний отступ*/
+  font-size: 16px;
+  margin-top: 90px;
+  margin-left: 35px;
 }
 
-.contact-link:before,
+.delivery-company-item {
+  position: relative;
+}
+
+.delivery-company-item:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 7px;
+  border-radius: 50%;
+  height: 7px;
+  background: #000000;
+}
+
+/*!*Подробнее*!*/
+.contact-link,
+.about-us-link {
+  display: block;
+  width: 220px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 550px;
+}
+
+.contact-link,
 .about-us-link:before {
   z-index: -1;
   content: "";
   position: absolute;
-  top: 6px;
+  top: 23px;
   left: 0;
   width: 100%;
   height: 8px;
   background-color: #f0c52e;
+  transition: all 0.5s linear;
 }
 
-.contact-link:hover,
-.about-us-link:hover {
-  opacity: 1;
-  padding-top: 14px; /*верхний внутренний отступ*/
-  padding-bottom: 14px; /*нижний внутренний отступ*/
-  background-color: #f0c52e;
+.contact-link,
+.about-us-link :hover:before {
+  top: 0;
+  height: 48px;
 }
 
-.contact-link:focus,
-.about-us-link:focus {
+.contact-link,
+.about-us-link:active {
   opacity: .6;
 }
-
-/*_____Кнопки напишите нам подробнее о нас_ END_______________*/
-.delivery-company-items {
-  list-style: circle;
+.contact-link-map {
+  height: 220px;
 }
+.button-yellow-top {
+  margin-top:70px;
+}
+/*_____Кнопки напишите нам подробнее о нас_ END_______________*/
 
 /*____________________________________________________________________________*/
 .footer {
@@ -429,7 +494,7 @@ a {
   justify-content: space-between;
 }
 
-.logo-text {
+.logo-text-footer {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 26.46px;
   color: #000000;
@@ -527,174 +592,126 @@ a {
 }
 
 /*-------------Всплывающее окно-------------*/
+
+.modal-write-us {
+  position: relative;
+  padding-top: 50px;
+  background-color: white;
+  display: none;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
+  width: 960px;
+  height: 550px;
+}
+
+.modal-write-us.active {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 330px;
+  left: 240px;
+}
+
+.write-us-close {
+  top: 25px;
+  right: 20px;
+  position: absolute;
+}
+
 .write-us-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-right: 42px;
-  padding-left: 60px;
   background-color: #fff;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-/*Покой*/
+.write-us-letter-text {
+  margin-top: 40px;
+}
 
-/*Наведение*/
+.modal-close-wrapper-img {
+  display: flex;
+  justify-content: flex-end;
+}
 
-/*input:hover, textarea:hover {*/
-/*background: #f2f2f2; !* Цвет фона под окантовкой *!*/
-/*}*/
+.write-nameid-e-mail {
+  display: flex;
+  justify-content: space-between;
 
-/*Фокус*/
+}
 
-/*input:focus, textarea:focus {*/
-/*background: #ffffff; !* Цвет фона под окантовкой *!*/
-/*border: 2px solid #ffc600; !* Рамка вокруг текстового поля *!*/
-/*}*/
+.text_nameid,
+.text_e-mail,
+.free_form {
+  background-color: #f2f2f2;
+  width: 360px;
+  padding-left: 20px;
+  border: none;
+  height: 50px;
+  /*opacity: 0.3;*/
+}
 
-/*Невалидное значение*/
-/*input:invalid {*/
-/*background: #f6dada; !* Красный цвет фона *!*/
-/*}*/
-/*input:valid {*/
-/*background: #ffffff; !* white цвет фона *!*/
-/*}*/
-/*!*--------_______________________________________________________________________________*!*/
-/*.write-us-name {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 24px;*/
-/*font-size: 18px;*/
-/*}*/
-/*.write-us-e-mail {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 24px;*/
-/*font-size: 18px;*/
-/*}*/
-/*.write-us-letter-text{*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 24px;*/
-/*font-size: 18px;*/
-/*}*/
-/*.button {*/
-/*text-align: center;*/
-/*border: none;*/
-/*vertical-align: middle;*/
-/*text-transform: uppercase;*/
-/*background-color: #ffffff;}*/
+.free_form {
+  width: 760px;
+  padding-top: 20px;
+  height: 155px;
+}
 
-/*-------------Всплывающее окно-------------*/
-/*-------------END-------------*/
-/*Сервисы доставка итд*/
-/*!*Серый фон доставки итд*!*/
-/*.slide-services {*/
-/*background-color: #e5e5e5;*/
-/*}*/
-/*.slide-block-service {*/
+.nameid {
+  font-size: 5px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.333;
+  text-align: left;
+}
 
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(247, 225, 132);*/
-/*text-transform: uppercase;*/
-/*font-size: 18px;*/
-/*font-weight: bold;*/
-/*line-height:24px;*/
-/*}*/
-/*.logotype*/
-/*{width: 260px;*/
-/*height: 100px;}*/
+/*Окно поиска*/
+.search-input {
+  border: none;
+  opacity: 0.3;
+  background-color: transparent;
+}
 
-/*.about-us-h3 {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*font-size: 47px;*/
-/*font-weight: bold;*/
-/*line-height: 48px;*/
-/*color: rgb(0, 0, 0);}*/
+.modal-button {
+  display: block;
+  width: 220px;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
 
-/*.delivery-company-item {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*font-weight: bold;*/
-/*font-size: 15px;*/
-/*line-height: 30px;*/
-/*color: rgb(70, 70, 70);}*/
+.modal-button-text {
+  z-index: 102;
+}
 
-/*.contact-link {*/
-/*font-size: 18px;*/
-/*line-height: 24px;*/
-/*font-family:  "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*text-transform: uppercase;}*/
+.modal-button:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #f0c52e;
+  transition: all 0.5s linear;
+}
 
-/*.contact {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*font-size: 47px;*/
-/*font-weight: bold;*/
-/*line-height: 48px;*/
-/*color: rgb(0, 0, 0);*/
-/*}*/
-/*.contact-link-map*/
-/*{width: 560px;*/
-/*height: 222px;*/
-/*}*/
-/*!*FOOTEEEEEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!!!!!!!!!!!!!!!*!*/
-/*.main-footer*/
-/*{width: 1440px;*/
-/*height: 323px;*/
-/*background-color: #464646;*/
-/*}*/
-/*.footer-adress {*/
+.modal-button:hover:before {
+  top: 0;
+  height: 48px;
+}
 
-/*color: rgb(255, 255, 255);*/
-/*font-family: "Open Sans", "Arial", sans-serif;*/
-/*line-height: 30px;*/
-/*font-size: 15px;*/
-/*font-weight: 300;*/
-/*}*/
-/*!*.logo-text {*!*/
-/*!*font-size: 48px;*!*/
-/*!*font-family: "Gilroy","Arial", sans-serif;*!*/
-/*!*color: #ffc600;*!*/
-/*!*font-weight: bold;*!*/
-/*!*text-transform: uppercase;*!*/
-/*!*Что делать если высота строки АВТО????????????????????????? *!*/
-/*}*/
-/*!*Цвет у параметров НАЙТИ итд не меняется на белый? В чем причина?*!*/
-/*.nav-footer-item {*/
-/*font-size: 18px;*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*line-height: 24px;*/
-/*color: #ffffff;*/
-/*font-weight: bold;*/
-/*text-transform: uppercase;*/
-/*text-align: center;*/
-/*}*/
-/*.user-buttons-footer {*/
-/*font-size: 15px;*/
-/*font-family: "Open Sans", "Arial", sans-serif;*/
-/*color: rgb(255, 255, 255);*/
-/*line-height: 36px;*/
-/*text-align: center;*/
-/*}*/
-/*!*____________________________________________________________________________________*!*/
-/*!*WRITE US!!!!!!!!!!!!!*!*/
-/*!*Это просто ПИЗДЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЦ!*!*/
+.modal-button:active {
+  opacity: .6;
+}
 
-/*!*list2_______________________________________*!*/
-/*.titel h2 {*/
-/*font-family: "Gilroy","Arial", sans-serif;*/
-/*color: rgb(0, 0, 0);*/
-/*font-weight: bold;*/
-/*line-height: 48px;*/
-/*font-size: 47px;}*/
-
-/*.breadcrumbs a {*/
-/*font-size: 14px;*/
-/*font-family: "OpenSans" ,"Arial", sans-serif;*/
-/*color: rgba(0, 0, 0, 0.302);*/
-/*line-height: 24px;*/
-/*font-weight: 300;*/
-
-/*}*/
