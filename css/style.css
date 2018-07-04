@@ -74,6 +74,7 @@ a {
 }
 
 .header-wrapper {
+  position: relative;
   margin-top: -25px;
   padding-top: 25px;
   background-color: #f7e296;
@@ -146,14 +147,13 @@ a {
 
 .user-button {
   margin-right: 40px;
-
 }
 
 /*________________доставка гарантия контакты___________________________*/
 .nav {
   display: flex;
   justify-content: space-between;
-padding-left: 39px;
+  padding-left: 39px;
 }
 
 /*Кнопки доставка гарантия контакты + Каталог*/
@@ -168,19 +168,34 @@ padding-left: 39px;
 }
 
 .sub-nav-tabel {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 200;
+  background-color: #f7e296;
 }
-.nav-items {width: 550px;}
+
+.sub-nav-tabel.active {
+  display: flex;
+}
+
+.sub-nav-items {
+  width: 200px;
+  margin-right: 50px;
+}
+
 .sub-nav {
   display: flex;
   justify-content: space-between;
 }
-.sub-nav-margin {
-  margin-left: 60px;
-}
+
 /*.sub-nav-items {*/
-  /*margin-left: 20px;*/
+/*margin-left: 20px;*/
 /*}*/
 
 .nav-buttons {
@@ -218,10 +233,11 @@ padding-left: 39px;
 
 /*!*!*Закончился хедер, начинается боди*!_________________________________*!*/
 .slides {
-  background-image: linear-gradient(to bottom, #f7e296 100px, transparent 100px);
+  padding-top: 60px;
+  background-image: linear-gradient(to bottom, #f7e296 160px, transparent 160px);
 }
 
-.slides-wrapepr {
+.slides-wrapper {
   display: flex;
 }
 
@@ -239,7 +255,8 @@ padding-left: 39px;
   color: #ffff;
   position: absolute;
   height: 179px;
-  top: -50px;
+  line-height: 179px;
+  top: -31px;
   right: 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
@@ -257,7 +274,6 @@ padding-left: 39px;
   color: #000000;
 }
 
-/*Вопрос:???????????????????????????????????????????????????????????????????????????????*/
 /*!*Подробнее*!*/
 .button-yellow {
   display: block;
@@ -267,7 +283,8 @@ padding-left: 39px;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-
+  background-color: transparent;
+  border: none;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
@@ -356,15 +373,78 @@ padding-left: 39px;
   line-height: 24px;
 }
 
-/*-------------Секция продуктов с квадратиками-------------*/
-/*-------------END-------------*/
-/*Глава о разорении кредиторов*/
-.slide-service {
+/*---------------Доставка Гарантия Кредит---------------------------------------------*/
+
+.services {
+  margin-top: 75px;
+  background-image: linear-gradient(to top, #e5e5e5 290px, transparent 290px);
+}
+
+.services-wrapper {
+  padding-top: 75px;
+  padding-bottom: 125px;
+}
+
+.service-block {
   display: flex;
   justify-content: space-between;
 }
 
-/*Расстояние между элементами ? Расстояние между элементами ? Расстояние между элементами ?*/
+.services-buttons-items {
+  position: relative;
+}
+
+.services-buttons-items:before {
+  content: "";
+  width: 7px;
+  height: 320px;
+  background-color: black;
+  position: absolute;
+  left: 293px;
+  top: 0px;
+
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-button {
+  z-index: 2;
+  width: 160px;
+}
+
+.service-button.active {
+  color: #f7e184;
+}
+
+.service-button.active:before {
+  width: 300px;
+  background-color: #000;
+  height: 100%;
+  top: 0;
+}
+
+.vertical {
+  width: 7px;
+  height: 319px;
+  background-color: black;
+  position: absolute;
+  left: 420px;
+}
+
+.slide-service {
+  display: none;
+  width: 780px;
+  position: relative;
+}
+
+.slide-service.active {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*-------------Логотипы-------------*/
 .logotypes-wrapper {
   display: flex;
@@ -396,11 +476,13 @@ padding-left: 39px;
   width: 40%;
 
 }
+
 .rectangle-info {
   width: 80px;
   height: 7px;
   background: #000000;
 }
+
 .about-us-title,
 .contact-title {
   font-size: 47px;
@@ -474,29 +556,32 @@ padding-left: 39px;
 .about-us-link:active {
   opacity: .6;
 }
+
 .contact-link-map {
   height: 220px;
 }
+
 .button-yellow-top {
-  margin-top:70px;
+  margin-top: 70px;
 }
-/*_____Кнопки напишите нам подробнее о нас_ END_______________*/
 
 /*____________________________________________________________________________*/
 .footer {
   background-color: #464646;
+  padding-top: 50px;
+  padding-bottom: 67px;
 }
 
-/*Логотип*/
-
-.footer-wrapper {
+/*_______________1я строка___________________*/
+.footer-nav {
   display: flex;
   justify-content: space-between;
 }
+.footer-left {margin-left: 0px;}
 
 .logo-text-footer {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 26.46px;
+  font-size: 27px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
@@ -505,6 +590,24 @@ padding-left: 39px;
 /*Одинаковые логотипы и в хедере и в футере, только цвет разный.*/
 .logo-footer {
   color: #f0c52e;
+}
+
+.user-buttons-footers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-button-footer {
+  color: #ffffff;
+}
+
+
+
+/*_______________2я строка___________________*/
+
+.websites-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .address {
@@ -517,80 +620,23 @@ padding-left: 39px;
   color: #fff;
 }
 
-.user-interface {
-  display: flex;
-  justify-content: space-between;
-}
-
-.websites-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav-footer {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  width: 440px;
 }
+.nav-link-f {color: #fff;}
 
-/*________________войти___________________*/
-.user-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
+.tel-number {color: #fff; }
+/*_______________3я строка___________________*/
 
-}
-
-.user-buttons-items {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-
-.user-button {
-  margin-right: 40px;
-
-}
-
-/*________________доставка гарантия контакты___________________________*/
-.nav {
+.user-interface-footer {
   display: flex;
   justify-content: space-between;
 }
-
-/*Кнопки доставка гарантия контакты + Каталог*/
-.nav-link {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.sub-nav-tabel {
+.footer-websites {
   display: flex;
   justify-content: space-between;
 }
-
-.sub-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-
-.nav-item-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-item {
-  margin-right: 40px;
-}
-
 /*-------------Всплывающее окно-------------*/
 
 .modal-write-us {

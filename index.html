@@ -10,7 +10,7 @@
 <body>
 <header class="main-header">
   <div class="logo container">
-    <a class="logo-text" href="index.html">Device </a>
+    <a class="logo-text" href="index.html">Device</a>
   </div>
   <div class="header-wrapper container">
     <div class="user-interface">
@@ -21,7 +21,7 @@
       </form>
       <div class="user-buttons">
         <ul class="user-buttons-items">
-          <li><a class="user-button" href="#"><img class="user-button-icon" src="img/user.png">Войти</a></li>
+          <li><a class="user-button login-link" href="#"><img class="user-button-icon" src="img/user.png">Войти</a></li>
         </ul>
         <ul class="user-buttons-items">
           <li><a class="user-button" href="#"><img class="user-button-icon" src="img/compare.png">Сравнить</a></li>
@@ -35,24 +35,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Каталог товаров<img class="nav-link-icon" src="img/plus.png"></a>
             <div class="sub-nav-tabel">
-              <div class="sub-nav">
-                <ul class="sub-nav-items">
-                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Виртуальная реальность</a></li>
-                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Моноподы для селфи</a></li>
-                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Экшн-камеры</a></li>
-                </ul>
-              </div>
-              <div class="sub-nav sub-nav-margin">
-                <ul class="sub-nav-items">
-                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Фитнес-браслеты </a></li>
-                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Умные часы</a></li>
-                </ul>
-              </div>
-              <div class="sub-nav sub-nav-margin">
-                <ul class="sub-nav-items">
-                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Квадрокоптеры</a></li>
-                </ul>
-              </div>
+              <ul class="sub-nav-items">
+                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Виртуальная реальность</a></li>
+                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Моноподы для селфи</a></li>
+                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="sub-nav-items">
+                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Фитнес-браслеты </a></li>
+                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Умные часы</a></li>
+              </ul>
+              <ul class="sub-nav-items">
+                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Квадрокоптеры</a></li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -219,45 +213,62 @@
       </ul>
     </div>
   </section>
-  <section class="slide-services container">
-    <h2 class="visually-hidden">Слайды услуг магазина</h2>
-    <div class="slide-service active">
-      <div class="slide-block">
-        <h3 class="slide-block-service">Доставка</h3>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо к вашему<br>
-          подъезду совершенно бесплатно! Ведь мы неплохо<br>
-          заработаем, поднимая его на ваш этаж.
-        </p>
-      </div>
-      <div class="slide-image">
-        <img class="image-end" src="img/delivery.png" alt="Бегущий человечек">
-      </div>
-    </div>
-    <div class="slide-service">
-      <div class="slide-block">
-        <h3 class="slide-block-service">Гарантия</h3>
-        <p>
-          Если из-за возгорания купленного у нас товара у вас сгорит<br>
-          дом - не переживайте, мы выдадем вам новый.<br>
-          Товар, не дом, конечно же.
-        </p>
-      </div>
-      <div class="slide-image-end">
-        <img class="image-end" src="img/warranty.png" alt="Условия Гарантия">
-      </div>
-    </div>
-    <div class="slide-service">
-      <div class="slide-block">
-        <h3 class="slide-block-service">Кредит</h3>
-        <p>
-          Залезть в долговую яму стало проще! Кредитные<br>
-          консультанты подберут для вас наиболее выгодные<br>
-          условия кредита. Выгодные для нашего банка, разумеется.
-        </p>
-      </div>
-      <div class="slide-image-end">
-        <img class="image-end" src="img/credit.png" alt="Условия Кредит">
+  <section class="services">
+    <div class="services-wrapper container">
+      <h2 class="visually-hidden">Слайды услуг магазина</h2>
+      <div class="service-block">
+        <ul class="services-buttons-items">
+          <li>
+            <button class="button-yellow service-button active">Доставка</button>
+          </li>
+          <li>
+            <button class="button-yellow service-button">Гарантия</button>
+          </li>
+          <li>
+            <button class="button-yellow service-button">Кредит</button>
+          </li>
+        </ul>
+        <div class="service-slides">
+          <div class="slide-service active">
+            <div class="slide-block">
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему<br>
+                подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
+            <div class="slide-image">
+              <img class="image-end" src="img/delivery.png" alt="Бегущий человечек">
+            </div>
+          </div>
+          <div class="slide-service">
+            <div class="slide-block">
+              <h3 class="slide-block-service">Гарантия</h3>
+              <p>
+                Если из-за возгорания купленного у нас товара у вас сгорит<br>
+                дом - не переживайте, мы выдадем вам новый.<br>
+                Товар, не дом, конечно же.
+              </p>
+            </div>
+            <div class="slide-image-end">
+              <img class="image-end" src="img/warranty.png" alt="Условия Гарантия">
+            </div>
+          </div>
+          <div class="slide-service">
+            <div class="slide-block">
+              <h3 class="slide-block-service">Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще! Кредитные<br>
+                консультанты подберут для вас наиболее выгодные<br>
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+            <div class="slide-image-end">
+              <img class="image-end" src="img/credit.png" alt="Условия Кредит">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -323,51 +334,66 @@
 </main>
 <footer class="footer">
   <div class="footer-wrapper container">
-    <div class="main-footer-contact">
+    <!--_______________________________________________-->
+    <div class="footer-nav ">
       <div class="logo">
-        <a class="logo-text logo-footer" href="index.html">Device </a>
+        <a class="logo-text logo-footer footer-left" href="index.html">Device </a>
       </div>
-      <p class="footer-adress">
-      <address class="address">г.Москва, улица Строителей, 15</address>
-      </p>
-      <img src="img/Layer 6 copy 5.png">
-    </div>
-    <div class="websites-wrapper">
-      <div class="footer-nav">
-        <nav class="nav-footer">
-          <ul class="nav-footer-items">
-            <li class="nav-footer-item"><a class="nav-link" href="#">Доставка</a></li>
-            <li class="nav-footer-item"><a class="nav-link" href="#">Гарантия</a></li>
-            <li class="nav-footer-item"><a class="nav-link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-websites">
-        <ul class="nav-footer-websites">
-          <li class="nav-footer-website"><a class="nav-link" href="facebook.com"><img src="img/ФБ.png"></a></li>
-          <li class="nav-footer-website"><a class="nav-link" href="instagram.com"><img src="img/insta.png"></a></li>
-          <!-- (｡◕‿◕｡) -->
-          <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/Твитер.png"></a></li>
+      <div class="user-buttons-footers">
+        <ul class="user-buttons-footer">
+          <li><a class="user-button-footer" href="#"><img class="yellow" src="img/user-Y.png">Войти</a></li>
+        </ul>
+        <ul class="user-buttons-footer">
+          <li><a class="user-button-footer" href="#"><img class="yellow" src="img/compare-Y.png">Сравнить</a></li>
+        </ul>
+        <ul class="user-buttons-footer">
+          <li><a class="user-button-footer" href="#"><img class="yellow" src="img/cart-Y.png">Корзина</a></li>
         </ul>
       </div>
     </div>
-    <div class="user-interface-footer">
-      <span class="user-form-footer"></span>
-      <ul class="user-buttons-footer">
-        <li><a class="user-button-footer" href="#"><img src="img/user.png">Войти</a></li>
-        <li><a class="user-button-footer" href="#"><img src="img/compare.png">Сравнить</a></li>
-        <li><a class="user-button-footer" href="#"><img src="img/cart.png">Корзина</a></li>
-      </ul>
-      <a href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
-      <img src="img/logo-html.png" alt="HTML-academy">
+    <!--___________________________________________-->
+    <div class="websites-wrapper">
+      <p class="footer-adress">
+      <address class="address">г.Москва, улица Строителей, 15</address>
+      </p>
+      <nav class="nav-footer">
+        <ul class="color: #fff;">
+          <li class="nav-footer-item"><a class="nav-link nav-link-f" href="#">Доставка</a></li>
+        </ul>
+        <ul class="nav-footer-items">
+          <li class="nav-footer-item"><a class="nav-link nav-link-f" href="#">Гарантия</a></li>
+        </ul>
+        <ul class="nav-footer-items">
+          <li class="nav-footer-item"><a class="nav-link nav-link-f" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="tel-number" href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
     </div>
+    <!--___________________________________________________-->
+    <div class="user-interface-footer">
+      <img src="img/Layer 6 copy 5-Y.png" width="81px" height="7px">
+      <div class="footer-websites">
+        <ul class="nav-footer-websites">
+          <li class="nav-footer-website"><a class="nav-link" href="facebook.com"><img src="img/ФБ.png"></a></li>
+        </ul>
+        <ul class="nav-footer-websites">
+          <li class="nav-footer-website"><a class="nav-link" href="instagram.com"><img src="img/insta.png"></a></li>
+        </ul>
+        <!-- (｡◕‿◕｡) -->
+        <ul class="nav-footer-websites">
+          <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/Твитер.png"></a></li>
+        </ul>
+      </div>
+      <img src="img/logo-html-Y.png" alt="HTML-academy" width="30px" height="38px">
+    </div>
+    <!--________________________________________________________________________-->
   </div>
 </footer>
 <div class="modal-write-us">
   <div class="write-us-wrapper container">
     <form class="write-us" action="#">
       <h2 class="visually-hidden">Регистрация</h2>
-        <img class="write-us-close" src="img/modal-close.png">
+      <img class="write-us-close" src="img/modal-close.png">
       <div class="write-nameid-e-mail">
         <div class="write-us-name">
           <label for="nameid">Ваше имя: </label> <br>
@@ -379,8 +405,9 @@
         </div>
       </div>
       <div class="write-us-letter-text">
-        <label  for="letter-text">Текст письма:</label> <br>
-        <textarea class="free_form" type="text" id="letter-text" size=”36” maxlength=”75” placeholder="В_свободной_форме"></textarea>
+        <label for="letter-text">Текст письма:</label> <br>
+        <textarea class="free_form" type="text" id="letter-text" size=”36” maxlength=”75”
+                  placeholder="В_свободной_форме"></textarea>
       </div>
       <button class="modal-button" type="submit"><span class="modal-button-text">Отправить</span></button>
     </form>
@@ -391,11 +418,7 @@
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473186!2d37.52742931545037!3d55.687034004530645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1528549973347"
     width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
 
-
-<!--**********************************************-->
-<!-- Где всплывающие окна ??? -->
-<!-- Где карта ??? -->
-<!--**********************************************-->
