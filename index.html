@@ -8,58 +8,58 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-  <div class="logo container">
+<header class="header">
+  <div class="container">
     <a class="logo-text" href="index.html">Device</a>
-  </div>
-  <div class="header-wrapper container">
-    <div class="user-interface">
-      <form action="#">
-        <img src=" img/search.png">
-        <input class="search-input" type="search" size=”15” maxlength=”36” placeholder="Поиск по сайту">
-        <input class="search-submit" type="submit" value="Найти">
-      </form>
-      <div class="user-buttons">
-        <ul class="user-buttons-items">
-          <li><a class="user-button login-link" href="#"><img class="user-button-icon" src="img/user.png">Войти</a></li>
-        </ul>
-        <ul class="user-buttons-items">
-          <li><a class="user-button" href="#"><img class="user-button-icon" src="img/compare.png">Сравнить</a></li>
-          <li><a class="user-button" href="#"><img class="user-button-icon" src="img/cart.png">Корзина</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="nav-interface">
-      <nav class="nav">
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Каталог товаров<img class="nav-link-icon" src="img/plus.png"></a>
-            <div class="sub-nav-tabel">
-              <ul class="sub-nav-items">
-                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Виртуальная реальность</a></li>
-                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Моноподы для селфи</a></li>
-                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="sub-nav-items">
-                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Фитнес-браслеты </a></li>
-                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Умные часы</a></li>
-              </ul>
-              <ul class="sub-nav-items">
-                <li class="sub-nav-item"><a class="sub-nav-link" href="#">Квадрокоптеры</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="nav-buttons">
-          <ul class="nav-item-buttons">
-            <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Гарантия</a></li>
+    <div class="header-wrapper">
+      <div class="user-interface">
+        <form action="#">
+          <img src=" img/search.png">
+          <input class="search-input" type="search" size=”15” maxlength=”36” placeholder="Поиск по сайту">
+          <input class="search-submit" type="submit" value="Найти">
+        </form>
+        <div class="user-buttons">
+          <ul class="user-buttons-items">
+            <li><a class="user-button login-link" href="#"><img class="user-button-icon" src="img/user.png"  height="12px">Войти</a></li>
           </ul>
-          <ul class="nav-item-buttons">
-            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+          <ul class="user-buttons-items">
+            <li><a class="user-button" href="#"><img class="user-button-icon" src="img/compare.png">Сравнить</a></li>
+            <li><a class="user-button" href="#"><img class="user-button-icon" src="img/cart.png">Корзина</a></li>
           </ul>
         </div>
-      </nav>
+      </div>
+      <div class="nav-interface">
+        <nav class="nav">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог товаров<img class="nav-link-icon" src="img/plus.png"></a>
+              <div class="sub-nav-tabel">
+                <ul class="sub-nav-items">
+                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Виртуальная реальность</a></li>
+                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Моноподы для селфи</a></li>
+                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="sub-nav-items">
+                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Фитнес-браслеты </a></li>
+                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Умные часы</a></li>
+                </ul>
+                <ul class="sub-nav-items">
+                  <li class="sub-nav-item"><a class="sub-nav-link" href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="nav-buttons">
+            <ul class="nav-item-buttons">
+              <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Гарантия</a></li>
+            </ul>
+            <ul class="nav-item-buttons">
+              <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
@@ -67,8 +67,19 @@
   <h1 class="visually-hidden">Интернет магазин Device</h1>
   <section class="slides container ">
     <h2 class="visually-hidden">Слайды товаров</h2>
-    <div class="slides-wrapepr">
-      <div class="slide active">
+
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+    <div class="slider-controls">
+      <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+      <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+      <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+    </div>
+    <!--_________________________________________________________________________-->
+    <div class="slider-list">
+      <div class="slide">
         <div class="slide-image-block-monopode">
           <img class="slide-image" src="img/slider-1.png" width="384" height="486"
                alt="Моноподы селфи палки">
@@ -80,11 +91,6 @@
           <p class="slide-description-paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (Восемь, Карл!) метров длиной и весом всего пять килограмм. </p>
           <a class="button-yellow" href="#">Подробнее</a>
-          <div class="slider-button-monopode">
-            <img src="img/slider-button.png">img
-            <img src="img/slider-button-empty.png">img
-            <img src="img/slider-button-empty.png">img
-          </div>
           <table class="slide-description-table">
             <tr class="slide-description-tr">
               <td class="slide-description-td">8,5м</td>
@@ -110,12 +116,6 @@
           <p class="slide-description-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
             не пропускать занятия и соблюдать диету.</p>
           <a class="button-yellow" href="#">Подробнее</a>
-          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-          <div class="slider-button-monopode">
-            <img src="img/slider-button-empty.png">img
-            <img src="img/slider-button.png">img
-            <img src="img/slider-button-empty.png">img
-          </div>
           <table class="slide-description-table">
             <tr class="slide-description-tr">
               <td class="slide-description-td">48ч</td>
@@ -135,16 +135,9 @@
           <h2 class="visually-hidden">Квадрокоптеры</h2>
           <p class="slide-description-paragraphs">Порхает как бабочка,<br>
             жалит как пчела!</p>
-          <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-            лазером,<br>
-            замаскированным под стандартную камеру.</p>
+          <p class="slide-description-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="button-yellow" href="#">Подробнее</a>
-          <!--как сделать? я не знаю это ссылка? Ведь если ткнуть на кнопочку выйдет другой слайд?-->
-          <div class="slider-button-monopode">
-            <img src="img/slider-button-empty.png">img
-            <img src="img/slider-button.png">img
-            <img src="img/slider-button-empty.png">img
-          </div>
           <table class="slide-description-table">
             <tr class="slide-description-tr">
               <td class="slide-description-td">800м</td>
@@ -365,12 +358,8 @@
       <div class="footer-websites">
         <ul class="nav-footer-websites">
           <li class="nav-footer-website"><a class="nav-link" href="facebook.com"><img src="img/ФБ.png"></a></li>
-        </ul>
-        <ul class="nav-footer-websites">
           <li class="nav-footer-website"><a class="nav-link" href="instagram.com"><img src="img/insta.png"></a></li>
-        </ul>
         <!-- (｡◕‿◕｡) -->
-        <ul class="nav-footer-websites">
           <li class="nav-footer-website"><a class="nav-link" href="twitter.com"><img src="img/Твитер.png"></a></li>
         </ul>
       </div>

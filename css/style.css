@@ -56,26 +56,26 @@ a {
   padding-right: 20px;
 }
 
-/*__________________________________________________________________*/
-/*Логотип*/
-
-.main-header {
-  padding-top: 17px;
+.header {
+  padding-top:40px;
+  position:relative;
 }
 
 .logo-text {
-  margin-left: 35px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   line-height: 48px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+  position: absolute;
+  z-index: 20;
+  top: 16px;
+  left: 199px;
 }
 
 .header-wrapper {
   position: relative;
-  margin-top: -25px;
   padding-top: 25px;
   background-color: #f7e296;
   padding-left: 39px;
@@ -86,8 +86,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4px;
-  padding-left: 39px;
+  padding-top: 5px;
+  padding-left: 23px;
 }
 
 .user-button-icon {
@@ -99,6 +99,7 @@ a {
   border: none;
   opacity: 0.3;
   background-color: transparent;
+  margin-left: 15px;
 }
 
 .search-input:hover {
@@ -135,7 +136,7 @@ a {
 .user-buttons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 51%;
 
 }
 
@@ -194,10 +195,6 @@ a {
   justify-content: space-between;
 }
 
-/*.sub-nav-items {*/
-/*margin-left: 20px;*/
-/*}*/
-
 .nav-buttons {
   display: flex;
   justify-content: space-between;
@@ -235,8 +232,58 @@ a {
 .slides {
   padding-top: 60px;
   background-image: linear-gradient(to bottom, #f7e296 160px, transparent 160px);
+  position: relative;
+  z-index: 20000000;
+}
+/*________________кружки переключения______________________*/
+.slider-controls {
+  position: absolute;
+  left: 90%;
+  bottom: 180px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 80px;
+
+  text-align: center;
+  font-size: 0;
 }
 
+.slider-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  border:1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 2.1px;
+  z-index: 1;
+
+  width: 6px;
+  height: 6px;
+
+  border:1px solid #000;
+
+  border-radius: 50%;
+}
+
+
+/*________________________________________*/
 .slides-wrapper {
   display: flex;
 }
@@ -261,11 +308,6 @@ a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
 }
-
-.slide.active {
-  display: flex;
-}
-
 .slide-description-paragraphs {
   font-size: 47px;
   line-height: 56px;
@@ -331,7 +373,19 @@ a {
   text-align: left;
 }
 
-/*__________________slider________________________*/
+
+#product-1:checked ~ .slider-list .slide:nth-child(1) {
+  display: flex;
+}
+
+#product-2:checked ~ .slider-list .slide:nth-child(2) {
+  display:  flex;
+}
+
+#product-3:checked ~ .slider-list .slide:nth-child(3) {
+  display: flex;
+}
+/*__________________slider________________________________________________*/
 
 /*-------------Секция продуктов с квадратиками-------------*/
 
@@ -578,7 +632,10 @@ a {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.footer-left {margin-left: 0px;}
+
+.footer-left {
+  margin-left: 0px;
+}
 
 .logo-text-footer {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -591,19 +648,22 @@ a {
 /*Одинаковые логотипы и в хедере и в футере, только цвет разный.*/
 .logo-footer {
   color: #f0c52e;
+  position: static;
 }
 
 .user-buttons-footer {
   color: #ffffff;
   width: auto;
 }
-.user-buttons-items-footer {width: auto; color: #ffffff;}
+
+.user-buttons-items-footer {
+  width: auto;
+  color: #ffffff;
+}
 
 .user-buttons-footer a {
   color: #fff;
 }
-
-
 
 /*_______________2я строка___________________*/
 
@@ -623,8 +683,6 @@ a {
   color: #fff;
 }
 
-
-
 .nav-footer-items {
   display: flex;
   justify-content: space-between;
@@ -635,22 +693,42 @@ a {
 }
 
 .nav-footer-items li:last-child {
-  margin-right:0;
+  margin-right: 0;
 }
 
-.nav-link-f {color: #fff;}
+.nav-link-f {
+  color: #fff;
+}
 
-.tel-number {color: #fff; }
+.tel-number {
+  color: #fff;
+}
+
 /*_______________3я строка___________________*/
 
 .user-interface-footer {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-websites {
   display: flex;
   justify-content: space-between;
 }
+
+.nav-footer-websites {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-footer-website {
+  margin-right: 30px;
+}
+
+.nav-footer-website:last-child {
+  margin-right: 0;
+}
+
 /*-------------Всплывающее окно-------------*/
 
 .modal-write-us {
@@ -667,8 +745,8 @@ a {
   display: block;
   position: fixed;
   z-index: 100;
-  top: calc(50% - 500px/2);
-  left: calc(50% - 960px/2);
+  top: calc(50% - 500px / 2);
+  left: calc(50% - 960px / 2);
 }
 
 .write-us-close {
@@ -727,11 +805,6 @@ a {
 }
 
 /*Окно поиска*/
-.search-input {
-  border: none;
-  opacity: 0.3;
-  background-color: transparent;
-}
 
 .modal-button {
   display: block;
@@ -774,40 +847,58 @@ a {
 .modal-button:active {
   opacity: .6;
 }
+
 /*-------не понимаю прошу объяснить------------*/
 /*-------опускаем------------*/
 @keyframes bounce {
-0% { transform: translateY(-2000px);}
-70% { transform: translateY(30px);}
-90% { transform: translateY(-10px);}
-100% { transform: translateY(0px);}
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
-
 
 .active {
   display: block;
-  animation-name:bounce ;
-  animation-duration:0.6s ;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
+
 /*-------трясем-----------*/
 @keyframes shake {
-0%, 100% {transform: translateX(0px);}
-  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-  20%, 40%, 60%, 80% {transform: translateX(10px);}
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
+
 .modal-error {
-  animation-name:bounce ;
-  animation-duration:0.6s ;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
+
 .map {
   display: none;
   /*position: re;*/
 }
-.map.active{
-  display:block;
+
+.map.active {
+  display: block;
   position: absolute;
-  top: calc(50% - 450px/2);
-  left: calc(50% - 600px/2);
+  top: calc(50% - 450px / 2);
+  left: calc(50% - 600px / 2);
 }
 
 .map-close {
@@ -816,11 +907,148 @@ a {
   position: absolute;
 }
 
+/*______________________________Лист 2 Каталог_______________________________________*/
 
+.title {
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
 
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
 
+}
 
+.nav-arrow {
+  height: 10px;
+  width: 5px;
+}
 
+.content {
+  display: flex;
+  justify-content: space-between;
+}
 
+.black-line {
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
+/*____________________________________________________________________________*/
+.filter-item {
+  margin: 0;
+  padding: 0;
 
+  border: none;
+
+  width: 140px;
+  /*margin: 50px auto;*/
+}
+
+.range-filter {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-radius: 5px;
+}
+/*общая длина*/
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+/*диапазон*/
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 115px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #283136;
+  border: none;
+
+}
+
+.max-price {
+  text-align: right;
+}
+
+/*______________________________________________________________________________*/
+
+.sorting-title {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
